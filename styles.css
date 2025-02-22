@@ -24,9 +24,7 @@
             color: white;
         }
 
-        index.html {
-            background: rgba(0, 0, 0, 0.7);
-        }
+       
 
         #about {
             background: rgba(0, 0, 0, 0.7);
@@ -52,7 +50,7 @@
             align-items: center;
             justify-content: flex-end;
             float: right;
-            font-size: 1.2rem;
+            font-size: 1rem;
             color: transparent;
             background: linear-gradient(45deg, #ff6b6b, #f06595, #cc5de8, #845ef7, #5c7cfa, #339af0, #22b8cf, #20c997, #51cf66, #94d82d, #fcc419, #ff922b, #ff6f61, #d4a5a5, #a1c4fd, #c2e9fb);
             background-clip: text;
@@ -84,7 +82,7 @@
             display: inline;
             padding: 10px;
             margin: 10px;
-            font-size: 1.5rem;
+            font-size: 1rem;
             color: white;
             cursor: pointer;
             background: linear-gradient(45deg, #ff6b6b, #f06595, #cc5de8, #845ef7, #5c7cfa, #339af0, #22b8cf, #20c997, #51cf66, #94d82d, #fcc419, #ff922b);
