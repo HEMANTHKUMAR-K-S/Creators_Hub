@@ -99,8 +99,8 @@
                 }
 
                 closeCardButton.addEventListener('click', closeCard);
-                window.addEventListener('click', function (event) {
-                    if (event.target !== floatingCard && !floatingCard.contains(event.target)) {
+                document.addEventListener('click', function (event) {
+                    if (!floatingCard.contains(event.target) && event.target !== floatingCard) {
                         closeCard();
                     }
                 });
