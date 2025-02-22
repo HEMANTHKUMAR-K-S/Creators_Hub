@@ -475,10 +475,15 @@
                 text-align: center;
             }
             .footer-social{
-                position: absolute;
-               right: 75%;
+            position: absolute;
+               right: 90%;
                 text-align: center;
+             
             }
+            #facebook{
+                margin-left: 0;
+                width: 30px;
+                height: 30px;       }
         }
         @media (max-width: 768px) {
             /* Mobile view */
