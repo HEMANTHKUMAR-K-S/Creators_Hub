@@ -1,0 +1,135 @@
+/* Gallery Section */
+.gallery {
+    padding: 50px 0;
+    color: white;
+    text-align: center;
+}
+
+.gallery-container {
+    margin-top: 50px;
+    padding: 0 20px;
+    animation: fadeInUp 0.5s ease-in-out;
+}
+
+.gallery h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    background: linear-gradient(45deg, #ff7e5f, #feb47b);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.gallery p {
+    font-size: 1.2rem;
+    margin-bottom: 40px;
+}
+
+.gallery-section {
+    margin-bottom: 40px;
+}
+
+.gallery-section h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    background: linear-gradient(45deg, #3683d1, #00ffcc);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.gallery-images {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+.gallery-images img {
+    max-width: 100%;
+    height: 200px;
+    display: block;
+    object-fit: cover;
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for card effect */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for hover effects */
+    background-color: white; 
+    border: 2px solid #ddd; 
+    margin-bottom: 20px; 
+}
+
+.gallery-images img:hover {
+    
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); 
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 1024px) {
+    .gallery-images {
+        flex-direction: row;
+        gap: 15px;
+    }
+
+    .card {
+        max-width: 45%;
+    }
+}
+
+@media (max-width: 768px) {
+    .gallery-images {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        gap: 10px;
+    object-fit: cover;
+
+
+    }
+
+    .gallery-images img {
+        width: calc(50% - 10px); /* Three images per row with some gap */
+    }
+
+}
+ 
+@media (max-width: 480px) {
+    .gallery {
+        padding: 30px 0;
+    }
+
+    .gallery h2 {
+        font-size: 2rem;
+    }
+
+    .gallery p {
+        font-size: 1rem;
+    }
+
+    .gallery-section h2 {
+        font-size: 1.5rem;
+    }
+
+    .card-content {
+        padding: 15px;
+    }
+
+    .card-title {
+        font-size: 1.2rem;
+    }
+
+    .card-description {
+        font-size: 0.9rem;
+    }
+}
+
+/* Animation */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

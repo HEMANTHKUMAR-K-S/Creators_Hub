@@ -5,180 +5,142 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="./styles/workshops.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
         integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-
-    <title>Creators Club</title>
-
+    <title>Creators Hub</title>
 </head>
 
 <body>
-
     <div class="navbar">
-
+        <div class="logo-heading">
+            <h1>Creators Hub</h1>
+        </div>
         <div class="toggle-bar" id="toggleBar">
-            
             <ul>
-                <li> <a href="index.html">Home</a></li>
-                <li> <a href="clubs.html">Clubs</a></li>
-                <li> <a href="workshops.html">Workshops</a></li>
-                <li> <a href="gallery.html">Gallery</a></li>
-                <li> <a href="team.html">Team</a></li>
-                <li> <a href="contact.html">Contact</a></li>
-                <li> <a href="#about">About Us</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="workshops.html">Workshops</a></li>
+                <li><a href="mentors.html">Mentors</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="team.html">Team</a></li>
+                <li><a href="contact.html">Contact</a></li>
             </ul>
-                   <div class="mobile-join"><a href="#">Join Our Team</a></div> 
+            <div class="mobile-join"><a href="#">Join Our Team</a></div>
         </div>
-       
-        <div class="mobile-logo-heading">
-            <h1>Creators Clubs</h1>
-        </div>
-    
         <div class="menu-toggle" id="mobile-menu">
             <i class="fas fa-bars"></i>
-        </div>
-        <div class="logo-heading">
-            <h1>Creators Clubs</h1>
         </div>
         <div class="join"><a href="#">Join Our Team</a></div>
     </div>
 
-
     <section id="home">
-        <!-- <div class="container">
-            <h1>Welcome to Creators Club</h1>
-            <p>Where we help you bring your ideas to life</p>
-            <a href="#about" class="btn">Learn More</a>
-        </div> -->
-        <div id="floatingCard" class="floating-card">
-            <h2>Register for My Course</h2>
-            <p>Course Name: AI / ML</p>
-            <a href="#">Register</a>
-            <div id="closeCard"></div>
+        <div class="home-content">
+            <div class="home-image">
+                <img src="ass/images/pro-club.jpeg" alt="Creators Hub">
+            </div>
+            <div class="home-text">
+                <h2>Welcome to Creators Hub</h2>
+                <p>Join a community of passionate creators who come together to innovate, collaborate, and grow. Whether
+                    you are an artist, developer, designer, or entrepreneur, Creators Hub offers the resources and
+                    support you need to succeed.</p>
+                <a href="#about" class="btn">Learn More</a>
+            </div>
+
         </div>
-        <!-- <div class="club-container">
-            <div class="club-card">
-                <div class="card-content">
-                    <img src="ass/images/photo-club.jpeg" alt="Photography Club">
-                    <div class="card-overlay">
-                        <h3>Photography Club</h3>
-                        <p>Capture stunning moments and enhance your photography skills.</p>
-                        <p><strong>Last Date:</strong> March 15, 2025</p>
-                        <a href="#" class="register-btn">Register Now</a>
-                    </div>
-                </div>
-            </div>
 
-            <div class="club-card">
-                <div class="card-content">
-                    <img src="/ass/images/pro-club.jpeg" alt="Programming Club">
-                    <div class="card-overlay">
-                        <h3>Programming Club</h3>
-                        <p>Enhance coding skills and work on exciting projects.</p>
-                        <p><strong>Last Date:</strong> March 20, 2025</p>
-                        <a href="#" class="register-btn">Register Now</a>
-                    </div>
-                </div>
-            </div>
-        </div> -->
-
-        <script>
-            document.addEventListener('DOMContentLoaded', function () {
-                const floatingCard = document.getElementById('floatingCard');
-                const closeCardButton = document.getElementById('closeCard');
-
-                function closeCard() {
-                    floatingCard.style.display = 'none';
-                    document.body.style.overflow = 'auto'; // Enable scrolling
-                }
-
-                function openCard() {
-                    floatingCard.style.display = 'block';
-                    document.body.style.overflow = 'hidden'; // Disable scrolling
-                }
-
-                closeCardButton.addEventListener('click', closeCard);
-                document.addEventListener('click', function (event) {
-                    if (!floatingCard.contains(event.target) && event.target !== floatingCard) {
-                        closeCard();
-                    }
-                });
-
-                // Open the card initially or based on some condition
-                openCard();
-            });
-        </script>
     </section>
+
+    <section>
+        <div class="workshop-container">
+            <h2>Upcoming Workshops</h2>
+            <div id="upcoming-workshops" class="workshop-grid"></div>
+        </div> <div id="modal" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="closeModal()">&times;</span>
+                <h2>Register for Workshop</h2>
+                <form id="registrationForm">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" required>
+                    
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" required>
+                    
+                    <label for="workshop">Workshop:</label>
+                    <input type="text" id="workshop" readonly>
+    
+                    <button type="submit">Register</button>
+                </form>
+            </div>
+        </div>
+
+    </section>
+
     <section id="about" class="about-section">
         <div class="about-container">
             <h2>About Us</h2>
-            <p>Creators Club is a community of passionate individuals who come together to bring innovative ideas to
+            <p>Creators Hub is a community of passionate individuals who come together to bring innovative ideas to
                 life. Our mission is to provide a platform for creators to collaborate, learn, and grow. Whether you
-                are
-                an artist, developer, designer, or entrepreneur, Creators Club offers the resources and support you
-                need
-                to succeed.</p>
+                are an artist, developer, designer, or entrepreneur, Creators Hub offers the resources and support you
+                need to succeed.</p>
             <p>Join us to be a part of a vibrant community that values creativity, collaboration, and continuous
                 learning. Together, we can turn ideas into reality and make a positive impact on the world.</p>
         </div>
     </section>
+
     <footer>
         <div class="footer-container">
             <div class="footer-content">
-                <h2>Creators Club</h2>
-                <p>Creators Club is a community of passionate individuals who come together to bring innovative ideas to
-                    life.
-                    Our mission is to provide a platform for creators to collaborate, learn, and grow.</p>
+                <h2>Creators Hub</h2>
+                <p>Creators Hub is a community of passionate individuals who come together to bring innovative ideas to
+                    life. Our mission is to provide a platform for creators to collaborate, learn, and grow.</p>
                 <div class="footer-social">
                     <ul>
-                        <li><a href="https://www.facebook.com" target="_blank" class="facebook"><i
-                                    class="fab fa-facebook-f"></i></a></li>
-                        <li><a href="https://www.twitter.com" target="_blank" class="twitter"><i
-                                    class="fab fa-twitter"></i></a></li>
                         <li><a href="https://www.instagram.com" target="_blank" class="instagram"><i
                                     class="fab fa-instagram"></i></a></li>
                         <li><a href="https://www.linkedin.com" target="_blank" class="linkedin"><i
                                     class="fab fa-linkedin-in"></i></a></li>
-                                    <li><a href="https://wa.me/1234567890" target="_blank" class="whatsapp"><i class="fab fa-whatsapp"></i></a></li>
+                        <li><a href="https://wa.me/1234567890" target="_blank" class="whatsapp"><i
+                                    class="fab fa-whatsapp"></i></a></li>
                     </ul>
                 </div>
             </div>
             <div class="footer-content">
                 <h3>Quick Links</h3>
                 <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="clubs.html">Clubs</a></li>
                     <li><a href="workshops.html">Workshops</a></li>
-                    <li><a href="#gallery">Gallery</a></li>
+                    <li><a href="mentors.html">Mentors</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
                     <li><a href="team.html">Team</a></li>
                     <li><a href="contact.html">Contact</a></li>
-                    <li><a href="#about">About Us</a></li>
                 </ul>
             </div>
-           
+            <div class="footer-content">
+                <h3>Contact Us</h3>
+                <p>Email: <a href="mailto:info@creatorsclub.com">creators.hub.05@gmail.com</a></p>
+                <p>Phone: <a href="tel:+91 9505002615">+91 9505002615</a></p>
+                <p>Address: 000 , Tirupati, India</p>
+            </div>
+            <div class="footer-content">
+                <h3>Subscribe to Our Newsletter</h3>
+                <form action="#" method="post" class="newsletter-form">
+                    <input type="email" name="email" placeholder="Enter your email" required>
+                    <button type="submit" class="btn">Subscribe</button>
+                </form>
+            </div>
             <div class="footer-bottom">
-                <p>&copy; <script>document.write(new Date().getFullYear());</script> Creators Club. All rights reserved.</p>
+                <p>&copy;
+                    <script>document.write(new Date().getFullYear());</script> Creators Hub. All rights reserved.
+                </p>
             </div>
         </div>
     </footer>
-    <script>
-        function initMap() {
-            var location = { lat: 13.6288, lng: 79.4192 };
-            var map = new google.maps.Map(document.getElementById('map'), {
-                zoom: 12,
-                center: location
-            });
-            var marker = new google.maps.Marker({
-                position: location,
-                map: map
-            });
-        }
-    </script>
 
-    <script async defer src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap"></script>
+
+
+    <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap" async defer></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
-
+    <script src="workshops.js"></script>
     <script src="script.js"></script>
 </body>
 
