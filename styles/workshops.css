@@ -1,9 +1,9 @@
 /* Container */
 .workshop-container {
     width: 90%;
-    max-width: 1200px;
+    max-width: 100%;
     margin: auto;
-    padding: 20px;
+    padding: 10px;
     text-align: center;
 }
 
@@ -11,28 +11,29 @@
 .workshop-header {
     background: rgba(255, 255, 255, 0.1); /* Light transparent white */
     color: #fff; /* White */
-    padding: 20px;
-    margin-top: 100px;
+    padding: 10px;
+    margin-top: 50px;
     border-radius: 10px;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 
 .workshop-header h1 {
     margin: 0;
-    font-size: 2em;
+    font-size: 1.5em;
+    color: aqua;
 }
 
 .workshop-header p {
     margin-top: 5px;
-    font-size: 1.1em;
+    font-size: 1em;
 }
 
 /* Section Titles */
 .workshop-container h2 {
     color: #009999; /* Teal */
-    font-size: 1.8em;
-    margin-top: 30px;
-    border-bottom: 3px solid #009999; /* Teal */
+    font-size: 1.5em;
+    margin-top: 20px;
+    border-bottom: 2px solid #009999; /* Teal */
     display: inline-block;
     padding-bottom: 5px;
 }
@@ -40,24 +41,26 @@
 /* Workshop Grid */
 .workshop-grid {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
-    align-items: stretch; /* Changed from center to stretch */
-    gap: 20px;
-    margin-bottom: 30px;
-    margin-top: 20px;
+    align-items: stretch;
+    gap: 10px;
+    margin-bottom: 20px;
+    margin-top: 10px;
 }
 
 /* Workshop Card */
 .workshop-card {
-    /* background: #fff;  */
-    padding: 20px;
+    padding: 10px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Light transparent black */
     text-align: left;
     transition: transform 0.3s ease;
     display: flex;
-    flex-direction: column; /* Added to make the card content stretch */
-    justify-content: space-between; /* Added to distribute space */
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 300px;
 }
 
 .workshop-card:hover {
@@ -66,18 +69,18 @@
 
 .workshop-card h2 {
     color: #00ffcc; /* Bright cyan */
-    font-size: 1.5em;
+    font-size: 1.2em;
 }
 
 .workshop-card p {
-    font-size: 1em;
+    font-size: 0.9em;
     color: #ccc; 
-    margin: 5px;
+    margin: 5px 0;
 }
 
 .workshop-card div {
     margin-top: 8px;
-    font-size: 1em;
+    font-size: 0.9em;
 }
 
 .workshop-card div strong {
@@ -85,12 +88,13 @@
     color: #00ffcc; /* Bright cyan */
 }
 
-.instructor-info{
+.instructor-info {
     color: #ccc;
     font-weight: bold;
 }
+
 .date-time {
-    font-size: 0.9em;
+    font-size: 0.8em;
     color: #ccc; /* Light gray */
 }
 
@@ -100,7 +104,7 @@
     width: 100%;
     background: #00ffcc; /* Bright cyan */
     color: #fff; /* White */
-    padding: 10px;
+    padding: 8px;
     border: none;
     cursor: pointer;
     border-radius: 5px;
@@ -114,7 +118,7 @@
 
 /* Disabled Button */
 .disabled-btn {
-    background:#fff; /* Light gray */
+    background: #fff; /* Light gray */
     cursor: not-allowed;
     color: black;
 }
