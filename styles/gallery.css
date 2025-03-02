@@ -6,7 +6,7 @@
 }
 
 .gallery-container {
-    margin-top: 30px;
+    margin-top: 50px;
     padding: 0 10px;
     animation: fadeInUp 0.5s ease-in-out;
 }
@@ -78,7 +78,7 @@
     }
 
     .gallery-images img {
-        width: calc(50% - 10px); /* Two images per row with some gap */
+        width: calc(50% - 10px);
     }
 }
 

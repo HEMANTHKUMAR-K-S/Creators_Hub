@@ -6,13 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="styles/workshops.css">
+    <!-- <link rel="stylesheet" href="styles/theme.css"> -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
         integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Creators Hub</title>
 </head>
 
-<body>
+<body class="light-theme">
     <div class="navbar">
         <div class="logo-heading">
             <h1>Creators Hub</h1>
@@ -31,13 +32,16 @@
         <div class="menu-toggle" id="mobile-menu">
             <i class="fas fa-bars"></i>
         </div>
+        <!-- <span id="theme-toggle" class="theme-icon">
+            <i class="fas fa-moon"></i>
+        </span> -->
         <div class="join"><a href="#">Join Our Team</a></div>
     </div>
 
     <section id="home">
         <div class="home-content">
             <div class="home-image">
-                <img src="assets/images/pro-club.jpeg" alt="Creators Hub">
+                <img src="assets/images/logo-trasparent.png" alt="Creators Hub">
             </div>
             <div class="home-text">
                 <h2>Welcome to Creators Hub</h2>
@@ -55,6 +59,8 @@
         <div class="workshop-container">
             <h2>Upcoming Workshops</h2>
             <div id="upcoming-workshops" class="workshop-grid"></div>
+            <div id="coming-soon-workshops" class="workshop-grid"></div>
+
         </div>
         <div id="modal" class="modal">
             <div class="modal-content">
@@ -63,13 +69,13 @@
                 <form id="registrationForm">
                     <label for="name">Name:</label>
                     <input type="text" id="name" required>
-                    
+
                     <label for="email">Email:</label>
                     <input type="email" id="email" required>
-                    
+
                     <label for="workshop">Workshop:</label>
                     <input type="text" id="workshop" readonly>
-    
+
                     <button type="submit">Register</button>
                 </form>
             </div>
@@ -97,11 +103,11 @@
                     life. Our mission is to provide a platform for creators to collaborate, learn, and grow.</p>
                 <div class="footer-social">
                     <ul>
-                        <li><a href="https://www.instagram.com" target="_blank" class="instagram"><i
+                        <li><a href="https://www.instagram.com/creatorshub.ch?igsh=MTUxcTVud2ZkZWxlYQ==" target="_blank" class="instagram"><i
                                     class="fab fa-instagram"></i></a></li>
-                        <li><a href="https://www.linkedin.com" target="_blank" class="linkedin"><i
+                        <li><a href="https://www.linkedin.com/company/creatorshub-ch/" target="_blank" class="linkedin"><i
                                     class="fab fa-linkedin-in"></i></a></li>
-                        <li><a href="https://wa.me/1234567890" target="_blank" class="whatsapp"><i
+                        <li><a href="https://whatsapp.com/channel/0029Vb8Wg8r6hENxXsKffY3r" target="_blank" class="whatsapp"><i
                                     class="fab fa-whatsapp"></i></a></li>
                     </ul>
                 </div>

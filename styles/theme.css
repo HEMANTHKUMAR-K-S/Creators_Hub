@@ -1,0 +1,43 @@
+/* Light Theme */
+body.light-theme {
+    background-color: #ffffff;
+    color: #000000;
+}
+
+.navbar.light-theme {
+    background-color: #f0f0f0;
+    color: #000000;
+}
+
+.footer-container.light-theme {
+    background: linear-gradient(45deg, #f0f0f0, #d0d0d0);
+}
+
+/* Dark Theme */
+body.dark-theme {
+    background-color: #05273d;
+    color: #ffffff;
+}
+
+.navbar.dark-theme {
+    background-color: #34495e;
+    color: #ffffff;
+}
+
+.footer-container.dark-theme {
+    background: linear-gradient(45deg, #2c3e50, #34495e);
+}
+
+/* Theme Toggle Icon */
+.theme-icon {
+    font-size: 1.5rem;
+    cursor: pointer;
+    margin-left: auto;
+    padding: 10px;
+    color: #000000;
+    transition: color 0.3s;
+}
+
+body.dark-theme .theme-icon {
+    color: #ffffff;
+}

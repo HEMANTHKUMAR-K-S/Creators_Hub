@@ -1,16 +1,16 @@
 // Sample Data for Workshops
 const workshops = [
-    { name: "Personal Branding and LinkedIn Optimization", details: "Enhance your personal brand and optimize your LinkedIn profile to attract potential employers and clients.", instructor: "Kalyan Vara Prasad T", date: "Soon", time: "Soon", status: "upcoming" },
-    { name: "Personal Branding and LinkedIn Optimization", details: "Enhance your personal brand and optimize your LinkedIn profile to attract potential employers and clients.", instructor: "Kalyan Vara Prasad T", date: "Soon", time: "Soon", status: "completed" }
-
-    // { name: "Data Analysis with Python", details: "Master pandas and NumPy for data science.", instructor: "Jane Smith", date: "2025-03-20", time: "02:00 PM", status: "upcoming" },
-    // { name: "Cybersecurity Basics", details: "Learn ethical hacking and security fundamentals.", instructor: "Alex Brown", date: "2025-02-10", time: "11:00 AM", status: "completed" },
-    // { name: "Cloud Computing Essentials", details: "AWS, Azure, and Google Cloud fundamentals.", instructor: "Sarah Lee", date: "2025-01-30", time: "04:00 PM", status: "completed" }
+    {
+        name: "Personal Branding and LinkedIn Optimization", details: "Build a standout LinkedIn profile & portfolio (GitHub, Notion, Canva) Find internship opportunities without prior experience."
+        , instructor: "Kalyan Vara Prasad T", date: "Coming Soon", time: "Coming Soon", status: "coming-soon"
+    },
+    { name: "Public Speaking & Communication Skills", details: "Overcome stage fear & master storytelling. Practice elevator pitches for confidence.", instructor: "Maddy Chittoor", date: "Coming Soon", time: "Coming Soon", status: "coming-soon" },
 ];
 
 // Get Containers
-const upcomingContainer = document.getElementById("upcoming-workshops");
-const completedContainer = document.getElementById("completed-workshops");
+const upcomingContainer = document.getElementById("upcoming-workshops") || document.createElement('div');
+const completedContainer = document.getElementById("completed-workshops") || document.createElement('div');
+const comingSoonContainer = document.getElementById("coming-soon-workshops") || document.createElement('div');
 
 // Populate Workshops
 workshops.forEach(workshop => {
@@ -25,17 +25,19 @@ workshops.forEach(workshop => {
             <strong>Instructor:</strong> ${workshop.instructor}
         </div>
         <div class="date-time"><strong>Date:</strong> ${workshop.date} | <strong>Time:</strong> ${workshop.time}</div>
-        <button class="register-btn ${workshop.status === 'completed' ? 'disabled-btn' : ''}" 
-            ${workshop.status === 'completed' ? 'disabled' : `onclick="openModal('${workshop.name}')"`}>
-            ${workshop.status === 'completed' ? 'Completed' : 'Register'}
+        <button class="register-btn ${workshop.status !== 'upcoming' ? 'disabled-btn' : ''}" 
+            ${workshop.status !== 'upcoming' ? 'disabled' : `onclick="openModal('${workshop.name}')"`}>
+            ${workshop.status === 'completed' ? 'Completed' : (workshop.status === 'coming-soon' ? 'Coming Soon' : 'Register')}
         </button>
         ${workshop.status === 'completed' ? `<button class="visit-gallery-btn" onclick="window.location.href='gallery.html#${workshop.name.replace(/\s+/g, '-').toLowerCase()}'">Visit Gallery</button>` : ''}
     `;
     // Append to correct section
     if (workshop.status === "upcoming") {
         upcomingContainer.appendChild(workshopCard);
-    } else {
+    } else if (workshop.status === "completed") {
         completedContainer.appendChild(workshopCard);
+    } else if (workshop.status === "coming-soon") {
+        comingSoonContainer.appendChild(workshopCard);
     }
 });
 
