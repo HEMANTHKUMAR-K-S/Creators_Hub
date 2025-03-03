@@ -23,7 +23,6 @@ body {
     background-color: #34495e;
     width: 100%;
     height: 60px;
-    /* Increased height for better visibility */
     position: fixed;
     backdrop-filter: blur(10px);
     border: 2px solid transparent;
@@ -31,7 +30,6 @@ body {
     align-items: center;
     text-align: center;
     padding: 0 20px;
-    /* Added padding for better spacing */
 }
 
 .logo-heading {
@@ -45,19 +43,13 @@ body {
     cursor: pointer;
 }
 
-/* .logo-heading:hover {
-    transform: scale(1.05);
-} */
-
 .join a {
     position: absolute;
     top: 20%;
-
     right: 20px;
     color: white;
     text-decoration: none;
     padding: 8px 16px;
-    /* Increased padding */
     border-radius: 5px;
     background: linear-gradient(45deg, #34495e, #3683d1);
     background-size: 200% 200%;
@@ -67,7 +59,6 @@ body {
 
 .join a:hover {
     transform: scale(1.05);
-
 }
 
 .mobile-join {
@@ -152,7 +143,6 @@ body {
     .toggle-bar ul {
         text-align: left;
         position: absolute;
-        /* top: 10%; */
     }
 
     .menu-toggle {
@@ -184,24 +174,23 @@ body {
     }
 
     .join {
-     display: none;
+        display: none;
     }
 
     .mobile-join {
         display: block;
         position: absolute;
-        top: 35%;
+        top: 40%;
         color: white;
         text-decoration: none;
-        padding: 8px 16px;
-        /* Increased padding */
+        padding: 4px 8px;
+        font-size: 0.8rem;
     }
 
     .mobile-join a {
         color: white;
         text-decoration: none;
         padding: 8px 16px;
-        /* Increased padding */
         border-radius: 5px;
         background: linear-gradient(45deg, #34495e, #3683d1);
         background-size: 200% 200%;
@@ -212,7 +201,102 @@ body {
     .logo-heading {
         display: block;
         font-size: 0.8rem;
-        /* Adjusted font size */
+        top: 30%;
+        right: 50%;
+    }
+}
+
+/* Tablet styles */
+@media (min-width: 769px) and (max-width: 1024px) {
+
+    .toggle-bar {
+        display: none;
+    }
+
+    #mobile-menu {
+        display: block;
+    }
+
+    .toggle-bar.active {
+        display: block;
+        flex-direction: column;
+        background-color: #05273d;
+        width: 60%;
+        font-size: 1rem;
+        height: 100vh;
+        text-align: center;
+        justify-content: center;
+        top: 0;
+        left: 0;
+        position: fixed;
+        border-left: 5px solid rgba(255, 255, 255, 0.3);
+    }
+
+    .toggle-bar ul {
+        text-align: left;
+        position: absolute;
+    }
+
+    .menu-toggle , #close-icon{
+        display: block;
+        cursor: pointer;
+        font-size: 1.5rem;
+        color: #fff;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+    }
+
+
+    .toggle-bar ul li {
+        display: block;
+    }
+
+    .toggle-bar ul li a {
+        font-size: 1rem;
+    }
+    .navbar {
+        height: 70px;
+        padding: 0 30px;
+    }
+
+    .toggle-bar ul li {
+        font-size: 1rem;
+        padding: 10px;
+        margin: 10px;
+    }
+
+    .join a {
+        padding: 8px 16px;
+        display: none;
+    }
+
+    .toggle-bar ul li a {
+        padding: 10px 15px;
+    }
+    .mobile-join {
+        display: block;
+        position: absolute;
+        top: 50%;
+        color: white;
+        text-decoration: none;
+        padding: 4px 8px;
+        font-size: 0.8rem;
+    }
+
+    .mobile-join a {
+        color: white;
+        text-decoration: none;
+        padding: 8px 16px;
+        border-radius: 5px;
+        background: linear-gradient(45deg, #34495e, #3683d1);
+        background-size: 200% 200%;
+        animation: shiny 3s linear infinite;
+        transition: transform 0.3s ease-in-out;
+    }
+    .logo-heading {
+        display: block;
+        font-size: 0.8rem;
         top: 30%;
         right: 50%;
     }
@@ -403,7 +487,6 @@ body {
     justify-content: space-between;
     align-items: flex-start;
     padding: 20px;
-    /* Increased padding */
     flex-wrap: wrap;
 }
 
@@ -411,18 +494,14 @@ body {
 .footer-contact {
     flex: 1;
     margin: 10px;
-    /* Increased margin */
     min-width: 200px;
-    /* Increased min-width */
 }
 
 .footer-content h2,
 .footer-content h3,
 .footer-contact h3 {
     font-size: 1.5rem;
-    /* Increased font size */
     margin-bottom: 20px;
-    /* Increased margin */
     color: #89e0f0;
 }
 
@@ -433,7 +512,6 @@ body {
 
 .footer-content ul li {
     margin: 10px 0;
-    /* Increased margin */
 }
 
 .footer-content ul li a {
@@ -448,17 +526,13 @@ body {
 
 .footer-content h3 {
     font-size: 1.2rem;
-    /* Increased font size */
     margin-bottom: 10px;
-    /* Increased margin */
     color: #89e0f0;
 }
 
 .footer-content p {
     font-size: 1rem;
-    /* Increased font size */
     margin-bottom: 10px;
-    /* Increased margin */
     color: #ddd;
 }
 
@@ -474,7 +548,6 @@ body {
 
 .footer-social ul {
     margin-top: 20px;
-    /* Increased margin */
     display: flex;
     justify-content: left;
     padding: 0;
@@ -483,7 +556,6 @@ body {
 
 .footer-social ul li {
     margin: 0 10px;
-    /* Increased margin */
 }
 
 .footer-social ul li a {
@@ -491,13 +563,10 @@ body {
     align-items: center;
     justify-content: center;
     width: 40px;
-    /* Increased size */
     height: 40px;
-    /* Increased size */
     border-radius: 50%;
     color: #fff;
     font-size: 1.5rem;
-    /* Increased font size */
     text-decoration: none;
     transition: background 0.3s ease-in-out;
 }
@@ -505,14 +574,6 @@ body {
 .footer-social ul li a:hover {
     opacity: 0.9;
     color: #89e0f0;
-}
-
-.newsletter-form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 20px;
-    /* Increased margin */
 }
 
 .newsletter-form input[type="email"]:focus {
@@ -523,21 +584,16 @@ body {
 
 .newsletter-form input[type="email"] {
     padding: 10px;
-    /* Increased padding */
     border-radius: 5px;
     border: none;
     margin-bottom: 10px;
-    /* Increased margin */
     width: 80%;
     max-width: 400px;
-    /* Increased max-width */
     font-size: 1rem;
-    /* Increased font size */
 }
 
 .newsletter-form .btn {
     padding: 10px 20px;
-    /* Increased padding */
     border-radius: 5px;
     background: linear-gradient(45deg, #34495e, #2883df);
     background-size: 200% 200%;
@@ -545,7 +601,6 @@ body {
     color: white;
     text-decoration: none;
     font-size: 1rem;
-    /* Increased font size */
     transition: background 0.3s ease-in-out, transform 0.3s ease-in-out;
     border: none;
     cursor: pointer;
@@ -559,13 +614,10 @@ body {
 .footer-bottom {
     width: 100%;
     padding: 10px;
-    /* Increased padding */
     font-size: 1rem;
-    /* Increased font size */
     text-align: center;
     border-top: 1px solid #89e0f0;
     margin-top: 20px;
-    /* Increased margin */
 }
 
 .footer-bottom p {
@@ -586,5 +638,50 @@ body {
 
     .footer-social ul {
         justify-content: center;
+    }
+
+    .footer-content h2,
+    .footer-content h3,
+    .footer-contact h3,
+    .footer-content p,
+    .footer-bottom p {
+        font-size: 0.9rem;
+    }
+
+    .footer-social ul li a {
+        font-size: 1.2rem;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    .footer-container {
+        padding: 30px;
+    }
+
+    .footer-content h2,
+    .footer-content h3,
+    .footer-contact h3 {
+        font-size: 1.3rem;
+    }
+    .footer-content ul li {
+        margin: 15px 0;
+    }
+
+    .footer-content p {
+        font-size: 1rem;
+    }
+    .footer-content p a {
+        font-size: 0.9rem;
+    }
+    .newsletter-form input[type="email"] {
+        font-size: 1rem;
+    }
+
+    .newsletter-form .btn {
+        font-size: 1rem;
+    }
+
+    .footer-bottom {
+        font-size: 1rem;
     }
 }
