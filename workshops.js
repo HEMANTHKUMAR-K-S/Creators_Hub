@@ -2,7 +2,7 @@
 const workshops = [
     {
         name: "Personal Branding and LinkedIn Optimization", details: "Build a standout LinkedIn profile & portfolio (GitHub, Notion, Canva) Find internship opportunities without prior experience."
-        , instructor: "Kalyan Vara Prasad T", date: "Coming Soon", time: "Coming Soon", status: "coming-soon"
+        , instructor: "Kalyan Vara Prasad T", date: "07-03-2025", time: "7:00 PM - 8:00 PM", status: "upcoming"
     },
     { name: "Public Speaking & Communication Skills", details: "Overcome stage fear & master storytelling. Practice elevator pitches for confidence.", instructor: "Maddy Chittoor", date: "Coming Soon", time: "Coming Soon", status: "coming-soon" },
 ];
