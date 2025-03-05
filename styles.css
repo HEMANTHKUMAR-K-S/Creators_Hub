@@ -421,17 +421,6 @@ body {
         /* Adjusted padding */
     }
 }
-
-.home-workshops{
-    display: flex;
-}
-@media (min-width: 769px) and (max-width: 1024px) {
-    .home-workshops {
-        flex-direction: row;
-        gap: 15px;
-    }
-}
-
 .workshop-card {
     background: rgba(255, 255, 255, 0.1);
     border-radius: 10px;
@@ -447,11 +436,6 @@ body {
         margin-bottom: 30px;
     }
 
-    .home-workshops {
-        flex-direction: column;
-        align-items: center;
-        gap: 10px;
-    }
 }
 
 /* Why Join section */
