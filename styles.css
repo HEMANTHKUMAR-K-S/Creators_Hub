@@ -237,7 +237,8 @@ body {
         position: absolute;
     }
 
-    .menu-toggle , #close-icon{
+    .menu-toggle,
+    #close-icon {
         display: block;
         cursor: pointer;
         font-size: 1.5rem;
@@ -255,6 +256,7 @@ body {
     .toggle-bar ul li a {
         font-size: 1rem;
     }
+
     .navbar {
         height: 70px;
         padding: 0 30px;
@@ -274,6 +276,7 @@ body {
     .toggle-bar ul li a {
         padding: 10px 15px;
     }
+
     .mobile-join {
         display: block;
         position: absolute;
@@ -294,6 +297,7 @@ body {
         animation: shiny 3s linear infinite;
         transition: transform 0.3s ease-in-out;
     }
+
     .logo-heading {
         display: block;
         font-size: 0.8rem;
@@ -315,8 +319,9 @@ body {
     /* Added padding for spacing */
     border-radius: 10px;
 }
+
 #home:hover {
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);    
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
 
 .home-content {
@@ -335,6 +340,7 @@ body {
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 1);
 
 }
+
 .home-text p {
     margin: 10px auto;
     font-size: 1rem;
@@ -416,6 +422,16 @@ body {
     }
 }
 
+.home-workshops{
+    display: flex;
+}
+@media (min-width: 769px) and (max-width: 1024px) {
+    .home-workshops {
+        flex-direction: row;
+        gap: 15px;
+    }
+}
+
 .workshop-card {
     background: rgba(255, 255, 255, 0.1);
     border-radius: 10px;
@@ -426,17 +442,86 @@ body {
 
 
 @media (min-width: 768px) {
-
-
     .workshop-card {
         width: 30%;
         margin-bottom: 30px;
+    }
+
+    .home-workshops {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+}
+
+/* Why Join section */
+.why-join-section,
+.why-now-section {
+    padding: 60px 20px;
+    background-color: #05273d;
+    color: white;
+    text-align: center;
+}
+
+.why-join-container,
+.why-now-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.why-join-cards,
+.why-now-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.card {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    width: 250px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.card i {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    color: #00ffcc;
+    cursor: pointer;
+}
+
+.card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.card p {
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+
+    .why-join-cards,
+    .why-now-cards {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        width: 100%;
+        max-width: 300px;
     }
 }
 
 /* About section */
 .about-section {
-  
+
     display: flex;
     justify-content: center;
     align-items: center;
@@ -478,6 +563,84 @@ body {
     margin-bottom: 20px;
     /* Increased margin */
     line-height: 1.5;
+}
+/* FAQ section */
+.faq-section {
+    padding: 60px 20px;
+    background-color: #05273d;
+    color: white;
+    text-align: center;
+}
+
+.faq-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.faq-container h2 {
+    font-size: 2rem;
+    margin-bottom: 40px;
+    color: #00ffcc;
+}
+
+.faq-item {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    text-align: left;
+}
+
+.faq-question {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+}
+
+.faq-question h3 {
+    font-size: 1rem;
+    margin: 0;
+}
+
+.faq-question i {
+    font-size: 1rem;
+    transition: transform 0.3s ease-in-out;
+}
+
+.faq-answer {
+    display: none;
+    margin-top: 20px;
+    font-size: rem;
+    line-height: 1.5;
+}
+
+.faq-item.active .faq-answer {
+    display: block;
+}
+
+.faq-item.active .faq-question i {
+    transform: rotate(180deg);
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .faq-container h2 {
+        font-size: 2rem;
+    }
+
+    .faq-question h3 {
+        font-size: 1rem;
+    }
+
+    .faq-question i {
+        font-size: 1rem;
+    }
+
+    .faq-answer {
+        font-size: 0.8rem;
+    }
 }
 
 /* Footer */
@@ -663,6 +826,7 @@ body {
     .footer-contact h3 {
         font-size: 1.3rem;
     }
+
     .footer-content ul li {
         margin: 15px 0;
     }
@@ -670,9 +834,11 @@ body {
     .footer-content p {
         font-size: 1rem;
     }
+
     .footer-content p a {
         font-size: 0.9rem;
     }
+
     .newsletter-form input[type="email"] {
         font-size: 1rem;
     }

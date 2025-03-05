@@ -1,12 +1,10 @@
 /* Container */
 .workshop-container {
-    width: 90%;
     max-width: 100%;
     margin: auto;
     padding: 10px;
     text-align: center;
 }
-
 /* Header */
 .workshop-header {
     background: rgba(255, 255, 255, 0.1); /* Light transparent white */
@@ -123,17 +121,21 @@ a{
 
 /* Modal */
 .modal {
+    margin:10px ;
     display: none;
     position: fixed;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background: #ccc; /* Light gray */
-    padding: 20px;
+    background: #fff; /* White */
+    padding: 10px; /* Reduced padding */
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Medium transparent black */
-    width: 90%;
-    max-width: 400px;
+    width: 100%; /* Reduced width */
+    max-width: 350px; /* Reduced max-width */
+    z-index: 1000;
+    padding:10px;
+    border-radius: 5px;
 }
 
 .modal-content {
@@ -142,23 +144,22 @@ a{
 }
 
 .modal h2 {
-    color: #009999; /* Teal */
-    font-size: 1.5em;
-    margin-bottom: 10px;
+    color: #009999; 
+    font-size: 1.3em;
 }
 
 .modal label {
-    display: block;
-    margin: 10px 0 5px;
     font-weight: bold;
+    margin: 3px;
 }
 
 .modal input {
     width: 100%;
-    padding: 8px;
-    margin-bottom: 10px;
+    padding: 5px;
+    margin-bottom: 5px;
     border: 1px solid #ccc; /* Light gray */
     border-radius: 5px;
+    text-align: left;
 }
 
 .modal button {
@@ -166,7 +167,7 @@ a{
     width: 100%;
     background: #00ffcc; /* Bright cyan */
     color: #fff; /* White */
-    padding: 10px;
+    padding: 8px; /* Reduced padding */
     border: none;
     cursor: pointer;
     border-radius: 5px;
@@ -185,34 +186,12 @@ a{
     cursor: pointer;
 }
 
-/* Visit Gallery Button */
-.visit-gallery-btn {
-    display: block;
-    width: 50%;
-    background: #046983; /* Dark teal */
-    color: #fff; /* White */
-    padding: 10px;
-    border: none;
-    cursor: pointer;
-    border-radius: 5px;
-    font-size: 1em;
-    text-align: center;
-    transition: background 0.3s ease, transform 0.2s ease;
-    margin: 10px;
+label input[type="checkbox"] {
+    margin-right: 10px; 
+    align-items: end;
 }
-
-.visit-gallery-btn:hover {
-    background: #0c6075; /* Dark teal */
-    transform: scale(1.05);
-}
-
-.visit-gallery-btn:active {
-    transform: scale(0.95);
-}
-
-/* Responsive Design */
-@media (max-width: 768px) {
-    .workshop-card {
-        text-align: center;
-    }
+.terms{
+align-items: flex-start;
+    font-size: 0.9em;
+    margin-top: 5px;
 }

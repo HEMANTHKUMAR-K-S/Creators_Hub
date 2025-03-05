@@ -12,16 +12,20 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Creators Hub</title>
     <link rel="icon" href="assets/images/logo-trasparent.png" type="image/png">
-    <meta name="description" content="Creators Hub is a community of passionate creators who come together to innovate, collaborate, and grow. Join us for workshops, mentorship, and more.">
-    <meta name="keywords" content="Creators Hub, workshops, mentorship, community, innovation, collaboration, artists, developers, designers, entrepreneurs">
+    <meta name="description"
+        content="Creators Hub is a community of passionate creators who come together to innovate, collaborate, and grow. Join us for workshops, mentorship, and more.">
+    <meta name="keywords"
+        content="Creators Hub, workshops, mentorship, community, innovation, collaboration, artists, developers, designers, entrepreneurs">
     <meta name="author" content="Creators Hub">
     <meta property="og:title" content="Creators Hub">
-    <meta property="og:description" content="Join a community of passionate creators who come together to innovate, collaborate, and grow.">
+    <meta property="og:description"
+        content="Join a community of passionate creators who come together to innovate, collaborate, and grow.">
     <meta property="og:image" content="assets/images/logo-trasparent.png">
     <meta property="og:url" content="https://creatorshub-beta.vercel.app/">
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Creators Hub">
-    <meta name="twitter:description" content="Join a community of passionate creators who come together to innovate, collaborate, and grow.">
+    <meta name="twitter:description"
+        content="Join a community of passionate creators who come together to innovate, collaborate, and grow.">
     <meta name="twitter:image" content="assets/images/logo-trasparent.png">
     <meta name="robots" content="index, follow">
     <meta name="googlebot" content="index, follow">
@@ -31,6 +35,7 @@
 </head>
 
 <body>
+    <header>
     <div class="navbar">
         <div class="logo-heading">
             <h1>Creators Hub</h1>
@@ -44,7 +49,7 @@
                 <li><a href="team.html">Team</a></li>
                 <li><a href="contact.html">Contact</a></li>
             </ul>
-            <div class="mobile-join"><a href="https://whatsapp.com/channel/0029Vb8Wg8r6hENxXsKffY3r">Join</a></div>
+            <div class="mobile-join"><a href="https://whatsapp.com/channel/0029Vb8Wg8r6hENxXsKffY3r">Join Our Community</a></div>
         </div>
         <div class="menu-toggle" id="mobile-menu">
             <i class="fas fa-bars"></i>
@@ -52,9 +57,9 @@
         <!-- <span id="theme-toggle" class="theme-icon">
             <i class="fas fa-moon"></i>
         </span> -->
-        <div class="join"><a href="https://whatsapp.com/channel/0029Vb8Wg8r6hENxXsKffY3r">Join</a></div>
+        <div class="join"><a href="https://whatsapp.com/channel/0029Vb8Wg8r6hENxXsKffY3r">Join Our Community</a></div>
     </div>
-
+</header>
     <section id="home">
         <div class="home-content">
             <div class="home-image">
@@ -75,8 +80,10 @@
     <section>
         <div class="workshop-container">
             <h2>Upcoming Workshops</h2>
-            <div id="upcoming-workshops" class="workshop-grid"></div>
-            <div id="coming-soon-workshops" class="workshop-grid"></div>
+            <div class="home-workshops">
+                <div id="upcoming-workshops" class="workshop-grid"></div>
+                <div id="coming-soon-workshops" class="workshop-grid"></div>
+            </div>
 
         </div>
         <div id="modal" class="modal">
@@ -98,6 +105,11 @@
 
                     <label for="Workshop">Workshop:</label>
                     <input type="text" id="workshop" name="Workshop" readonly><br><br>
+
+                    <label for="terms" class="terms">
+                        <input type="checkbox" id="terms" name="terms" required>
+                        I agree to the <a href="terms.html" target="_blank">terms and conditions</a>
+                    </label><br><br>
 
                     <button type="submit">Register</button>
                 </form>
@@ -130,28 +142,28 @@
                     // Handle different response scenarios
                     if (result.result === "success") {
                         showModal(`
-                     <span class="close" onclick="closeModal()">&times;</span>
-                        <h2>Thank you for registering!</h2>
-                        <p>The meeting link will be sent to your registered email address.</p>
-                        <p>For more updates and information, join our community:</p>
-                        <a href="${result.community_link}" target="_blank">
-                            <button type="button">Join Our Community</button>
-                        </a>
-                    `);
+                 <span class="close" onclick="closeModal()">&times;</span>
+                <h2>Thank you for registering!</h2>
+                <p>The meeting link will be sent to your registered email address.</p>
+                <p>For more updates and information, join our community:</p>
+                <a href="${result.community_link}" target="_blank">
+                    <button type="button">Join Our Community</button>
+                </a>
+                `);
                     } else if (result.result === "already_registered") {
                         showModal(`
-                    <span class="close" onclick="closeModal()">&times;</span>
-                    <h2>You are already registered!</h2>
-                    <p>For updates and meeting links, join our community:</p>
-                    <a href="${result.community_link}" target="_blank" style="text-decoration: none;">
-                        <button type="button" style="background-color: #28a745; color: white; border: none; padding: 10px 20px; cursor: pointer; border-radius: 5px;">Join Our Community</button>
-                    </a>
-                    `);
+                <span class="close" onclick="closeModal()">&times;</span>
+                <h2>You are already registered!</h2>
+                <p>For updates and meeting links, join our community:</p>
+                <a href="${result.community_link}" target="_blank" style="text-decoration: none;">
+                <button type="button" style="background-color: #28a745; color: white; border: none; padding: 10px 20px; cursor: pointer; border-radius: 5px;">Join Our Community</button>
+                </a>
+                `);
                     } else if (result.result === "error") {
                         showModal(`
-                        <h2>Registration Error</h2>
-                        <p>${result.message}</p>
-                    `, true);
+                <h2>Registration Error</h2>
+                <p>${result.message}</p>
+                `, true);
                     } else {
                         showModal("Registration failed. Please try again.", true);
                     }
@@ -186,8 +198,62 @@
         </script>
 
     </section>
+    <section id="why-join" class="why-join-section">
+        <div class="why-join-container">
+            <h2>Why Join Creators Hub?</h2>
+            <div class="why-join-cards">
+                <div class="card">
+                    <i class="fas fa-users"></i>
+                    <h3>Community</h3>
+                    <p>Be part of a vibrant community of creators who support and inspire each other.</p>
+                </div>
+                <div class="card">
+                    <i class="fas fa-lightbulb"></i>
+                    <h3>Innovation</h3>
+                    <p>Collaborate on innovative projects and bring your creative ideas to life.</p>
+                </div>
+                <div class="card">
+                    <i class="fas fa-chalkboard-teacher"></i>
+                    <h3>Mentorship</h3>
+                    <p>Gain access to experienced mentors who can guide you on your creative journey.</p>
+                </div>
+                <div class="card">
+                    <i class="fas fa-tools"></i>
+                    <h3>Resources</h3>
+                    <p>Utilize a wide range of resources to enhance your skills and knowledge.</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
-    <section id="about" class="about-section">
+    <section id="why-now" class="why-now-section">
+        <div class="why-now-container">
+            <h2>Why Now?</h2>
+            <div class="why-now-cards">
+                <div class="card">
+                    <i class="fas fa-calendar-alt"></i>
+                    <h3>Timely Opportunities</h3>
+                    <p>Take advantage of timely opportunities to grow and showcase your talents.</p>
+                </div>
+                <div class="card">
+                    <i class="fas fa-rocket"></i>
+                    <h3>Accelerate Growth</h3>
+                    <p>Accelerate your personal and professional growth by joining now.</p>
+                </div>
+                <div class="card">
+                    <i class="fas fa-network-wired"></i>
+                    <h3>Networking</h3>
+                    <p>Expand your network and connect with like-minded individuals and industry leaders.</p>
+                </div>
+                <div class="card">
+                    <i class="fas fa-star"></i>
+                    <h3>Exclusive Access</h3>
+                    <p>Gain exclusive access to events, workshops, and resources.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- <section id="about" class="about-section">
         <div class="about-container">
             <h2>About Us</h2>
             <p>Creators Hub is a community of passionate individuals who come together to bring innovative ideas to
@@ -197,8 +263,82 @@
             <p>Join us to be a part of a vibrant community that values creativity, collaboration, and continuous
                 learning. Together, we can turn ideas into reality and make a positive impact on the world.</p>
         </div>
+    </section> -->
+    <section id="faq" class="faq-section">
+        <div class="faq-container">
+            <h2>FAQs</h2>
+            <div class="faq-item">
+                <div class="faq-question" onclick="toggleAnswer(this)">
+                    <h3>What is Creators Hub?</h3>
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                <div class="faq-answer">
+                    <p>Creators Hub is a community of passionate individuals who come together to bring innovative ideas to life. Our mission is to provide a platform for creators to collaborate, learn, and grow.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question" onclick="toggleAnswer(this)">
+                    <h3>How can I join Creators Hub?</h3>
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                <div class="faq-answer">
+                    <p>You can join Creators Hub by clicking on the "Join" link in the navigation bar or by visiting our community page on WhatsApp.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question" onclick="toggleAnswer(this)">
+                    <h3>What types of workshops do you offer?</h3>
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                <div class="faq-answer">
+                    <p>We offer a variety of workshops covering topics such as art, development, design, entrepreneurship, and more. Check our workshops page for upcoming events.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question" onclick="toggleAnswer(this)">
+                    <h3>How can I contact Creators Hub?</h3>
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                <div class="faq-answer">
+                    <p>You can contact us via email at creators.hub.05@gmail.com or by phone at +91 9505002615. Our address is 000, Tirupati, India.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question" onclick="toggleAnswer(this)">
+                    <h3>Do I need any prior experience to join the workshops?</h3>
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                <div class="faq-answer">
+                    <p>No, our workshops are designed for creators of all skill levels. Whether you are a beginner or an experienced professional, you will find value in our sessions.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question" onclick="toggleAnswer(this)">
+                    <h3>Are the workshops free?</h3>
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                <div class="faq-answer">
+                    <p>Yes, all our workshops are free to attend. We believe in providing accessible learning opportunities for everyone.</p>
+                </div>
+            </div>
+        </div>
     </section>
 
+    <script>
+        function toggleAnswer(element) {
+            const answer = element.nextElementSibling;
+            const icon = element.querySelector('i');
+            if (answer.style.display === "block") {
+                answer.style.display = "none";
+                icon.classList.remove('fa-chevron-up');
+                icon.classList.add('fa-chevron-down');
+            } else {
+                answer.style.display = "block";
+                icon.classList.remove('fa-chevron-down');
+                icon.classList.add('fa-chevron-up');
+            }
+        }
+    </script>
     <footer>
         <div class="footer-container">
             <div class="footer-content">
