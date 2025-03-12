@@ -1,6 +1,7 @@
 .contact-section {
     padding: 40px 0;
     font-family: Arial, sans-serif;
+    background-color: #FFFFFF;
 }
 
 .container {
@@ -15,12 +16,12 @@
     text-align: center;
     font-size: 32px;
     margin-bottom: 20px;
-    color: #00ffcc;
+    color: #FFFFFF;
 }
 
 .contact-card {
     margin: 100px auto 20px auto;
-    background: rgba(255, 255, 255, 0.1);
+    background-color: #7c7c7c;
     padding: 30px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -29,8 +30,8 @@
 
 .contact-card button {
     padding: 12px 24px;
-    background-color: #00ffcc;
-    color: #fff;
+    background-color: #bdbdbd;
+    color: #ffffff;
     border: none;
     border-radius: 5px;
     font-size: 16px;
@@ -39,36 +40,37 @@
 }
 
 .contact-card button:hover {
-    background-color: #0056b3;
+    background-color: #dcdcdc;
+    color: #7c7c7c;
 }
 
 .contact-form {
     margin: 30px auto 0 auto;
-    background: rgba(255, 255, 255, 0.1);
     padding: 30px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     margin-bottom: 20px;
     width: 100%;
     max-width: 700px;
+    background-color: #ffffff;
 }
 
 .contact-card h3 {
     font-size: 24px;
     margin-bottom: 15px;
-    color: #007BFF;
+    color: #bdbdbd;
 }
 
 .contact-form h3 {
     font-size: 24px;
     margin-bottom: 15px;
-    color: #00ffcc;
+    color: #7c7c7c;
 }
 
 .contact-card p {
     font-size: 16px;
     line-height: 1.8;
-    color: #fff;
+    color: #FFFFFF;
 }
 
 .contact-form form {
@@ -83,28 +85,29 @@
 .form-group label {
     font-size: 16px;
     margin-bottom: 8px;
-    color: #fff;
+    color: #7c7c7c;
 }
 
 .form-group input, .form-group textarea {
     width: 100%;
     padding: 10px;
-    border: 1px solid #ccc;
+    border: 1px solid #dcdcdc;
     border-radius: 5px;
     font-size: 14px;
-    color: #fff;
+    color: #7c7c7c;
     resize: none;
+    background-color: #ffffff;
 }
 
 .form-group input:focus, .form-group textarea:focus {
-    border-color: #00ffcc;
+    border-color: #bdbdbd;
     outline: none;
 }
 
 button[type="submit"] {
     padding: 10px 20px;
-    background-color: #00ffcc;
-    color: #fff;
+    background-color: #bdbdbd;
+    color: #ffffff;
     border: none;
     border-radius: 5px;
     font-size: 16px;
@@ -113,7 +116,7 @@ button[type="submit"] {
 }
 
 button[type="submit"]:hover {
-    background-color: #0056b3;
+    background-color: #7c7c7c;
 }
 
 button.team-join:hover {

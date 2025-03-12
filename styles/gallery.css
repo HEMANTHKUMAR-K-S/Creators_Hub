@@ -1,7 +1,7 @@
 /* Gallery Section */
 .gallery {
     padding: 30px 0;
-    color: white;
+    color: #ffffff;
     text-align: center;
 }
 
@@ -14,12 +14,13 @@
 .gallery h2 {
     font-size: 2rem;
     margin-bottom: 15px;
-    color: #00ffcc;
+    color: #7c7c7c;
 }
 
 .gallery p {
     font-size: 1rem;
     margin-bottom: 30px;
+    color: #bdbdbd;
 }
 
 .gallery-section {
@@ -29,7 +30,7 @@
 .gallery-section h2 {
     font-size: 1.5rem;
     margin-bottom: 15px;
-    color: #ccc;
+    color: #dcdcdc;
 }
 
 .gallery-images {
@@ -47,8 +48,8 @@
     border-radius: 10px; /* Rounded corners */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for card effect */
     transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for hover effects */
-    background-color: white; 
-    border: 2px solid #ddd; 
+    background-color: #efefef; 
+    border: 2px solid #dcdcdc; 
     margin-bottom: 15px; 
 }
 

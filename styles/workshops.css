@@ -1,16 +1,18 @@
 /* Container */
 .workshop-container {
+    background-color: #ffffff;
     max-width: 100%;
     margin: auto;
     padding: 10px;
     text-align: center;
 }
+
 /* Header */
 .workshop-header {
-    background: rgba(255, 255, 255, 0.1); /* Light transparent white */
-    color: #fff; /* White */
+    background-color: #7c7c7c;
+    color: #ffffff;
     padding: 10px;
-    margin-top: 50px;
+    margin-top: 60px;
     border-radius: 10px;
     margin-bottom: 10px;
 }
@@ -18,20 +20,21 @@
 .workshop-header h1 {
     margin: 0;
     font-size: 1.5em;
-    color: aqua;
+    color: #FFFFFF;
 }
 
 .workshop-header p {
     margin-top: 5px;
     font-size: 1em;
+    font-weight: 500;
 }
 
 /* Section Titles */
 .workshop-container h2 {
-    color: #009999; /* Teal */
+    color: #7c7c7c;
     font-size: 1.5em;
     margin-top: 20px;
-    border-bottom: 2px solid #009999; /* Teal */
+    border-bottom: 2px solid #ffffff;
     display: inline-block;
     padding-bottom: 5px;
 }
@@ -46,14 +49,17 @@
     margin-bottom: 20px;
     margin-top: 10px;
 }
-a{
+
+a {
     text-decoration: none;
 }
+
 /* Workshop Card */
 .workshop-card {
+    background-color: #7c7c7c;
     padding: 10px;
     border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Light transparent black */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     text-align: left;
     transition: transform 0.3s ease;
     display: flex;
@@ -64,13 +70,13 @@ a{
 }
 
 .workshop-card h2 {
-    color: #00ffcc; /* Bright cyan */
+    color: #FFFFFF;
     font-size: 1.2em;
 }
 
 .workshop-card p {
     font-size: 0.9em;
-    color: #ccc; 
+    color: #fff;
     margin: 5px 0;
 }
 
@@ -81,25 +87,25 @@ a{
 
 .workshop-card div strong {
     font-weight: bold;
-    color: #00ffcc; /* Bright cyan */
+    color: #FFFFFF;
 }
 
 .instructor-info {
-    color: #ccc;
+    color: #efefef;
     font-weight: bold;
 }
 
 .date-time {
     font-size: 0.8em;
-    color: #ccc; /* Light gray */
+    color: #efefef;
 }
 
 /* Register Button */
 .register-btn {
     display: block;
     width: 100%;
-    background: #00ffcc; /* Bright cyan */
-    color: #fff; /* White */
+    background: #dcdcdc;
+    color: #7c7c7c;
     padding: 8px;
     border: none;
     cursor: pointer;
@@ -109,32 +115,32 @@ a{
 }
 
 .register-btn:hover {
-    background: #009999; /* Teal */
+    background: #bdbdbd;
 }
 
 /* Disabled Button */
 .disabled-btn {
-    background: #fff; /* Light gray */
+    background: #ffffff;
     cursor: not-allowed;
     color: black;
 }
 
 /* Modal */
 .modal {
-    margin:10px ;
+    margin: 10px;
     display: none;
     position: fixed;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background: #fff; /* White */
-    padding: 10px; /* Reduced padding */
+    background: #ffffff;
+    padding: 10px;
     border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Medium transparent black */
-    width: 100%; /* Reduced width */
-    max-width: 350px; /* Reduced max-width */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    width: 100%;
+    max-width: 350px;
     z-index: 1000;
-    padding:10px;
+    padding: 10px;
     border-radius: 5px;
 }
 
@@ -144,7 +150,7 @@ a{
 }
 
 .modal h2 {
-    color: #009999; 
+    color: #7c7c7c;
     font-size: 1.3em;
 }
 
@@ -157,7 +163,7 @@ a{
     width: 100%;
     padding: 5px;
     margin-bottom: 5px;
-    border: 1px solid #ccc; /* Light gray */
+    border: 1px solid #efefef;
     border-radius: 5px;
     text-align: left;
 }
@@ -165,16 +171,16 @@ a{
 .modal button {
     display: block;
     width: 100%;
-    background: #00ffcc; /* Bright cyan */
-    color: #fff; /* White */
-    padding: 8px; /* Reduced padding */
+    background: #7c7c7c;
+    color: #ffffff;
+    padding: 8px;
     border: none;
     cursor: pointer;
     border-radius: 5px;
 }
 
 .modal button:hover {
-    background: #009999; /* Teal */
+    background: #7c7c7c;
 }
 
 /* Close Button */
@@ -187,11 +193,12 @@ a{
 }
 
 label input[type="checkbox"] {
-    margin-right: 10px; 
+    margin-right: 10px;
     align-items: end;
 }
-.terms{
-align-items: flex-start;
+
+.terms {
+    align-items: flex-start;
     font-size: 0.9em;
     margin-top: 5px;
 }

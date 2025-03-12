@@ -11,22 +11,20 @@ html {
 
 body {
     font-family: 'Roboto', sans-serif;
-    background-color: #05273d;
     overflow-x: hidden;
+    background-color: #fff;
 }
 
 /* Navbar */
 .navbar {
     display: flex;
-    background: rgba(4, 3, 9, 0);
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-    background-color: #34495e;
+    box-shadow: 0 4px 8px rgba(0, 0.1, 0, 0.3);
+    background-color: #fff;   
     width: 100%;
     height: 60px;
     position: fixed;
     backdrop-filter: blur(10px);
     border: 2px solid transparent;
-    border-image: linear-gradient(45deg, #34495e, #2c3e50) 1;
     align-items: center;
     text-align: center;
     padding: 0 20px;
@@ -37,7 +35,7 @@ body {
     align-items: center;
     justify-content: flex-end;
     font-size: 1rem;
-    color: #00ffcc;
+    color: #656565;
     transition: transform 0.3s ease-in-out;
     font-family: 'Arial', sans-serif;
     cursor: pointer;
@@ -51,10 +49,8 @@ body {
     text-decoration: none;
     padding: 8px 16px;
     border-radius: 5px;
-    background: linear-gradient(45deg, #34495e, #3683d1);
+    background-color: #7c7c7c;
     background-size: 200% 200%;
-    animation: shiny 3s linear infinite;
-    transition: transform 0.3s ease-in-out;
 }
 
 .join a:hover {
@@ -78,7 +74,7 @@ body {
 
 .toggle-bar ul li a {
     text-decoration: none;
-    color: white;
+    color: #656565;
     padding: 8px 12px;
     border-radius: 5px;
     position: relative;
@@ -91,7 +87,7 @@ body {
     height: 2px;
     bottom: 0;
     left: 0;
-    background-color: #fff;
+    background-color: #656565;
     visibility: hidden;
     transform: scaleX(0);
     transition: all 0.3s ease-in-out;
@@ -128,7 +124,7 @@ body {
     .toggle-bar.active {
         display: block;
         flex-direction: column;
-        background-color: #05273d;
+        background-color: #fff;
         width: 60%;
         font-size: 1rem;
         height: 100vh;
@@ -149,7 +145,7 @@ body {
         display: block;
         cursor: pointer;
         font-size: 1.5rem;
-        color: #fff;
+        color: #656565;
         position: absolute;
         top: 20px;
         right: 20px;
@@ -159,7 +155,7 @@ body {
         display: block;
         cursor: pointer;
         font-size: 1.5rem;
-        color: #fff;
+        color: #656565;
         position: absolute;
         top: 20px;
         right: 20px;
@@ -172,7 +168,11 @@ body {
     .toggle-bar ul li a {
         font-size: 1rem;
     }
-
+    .toggle-bar ul li a:hover{
+        background-color: #7c7c7c;
+        color: #FFFF;
+        opacity: 0.9;
+    }
     .join {
         display: none;
     }
@@ -180,7 +180,7 @@ body {
     .mobile-join {
         display: block;
         position: absolute;
-        top: 40%;
+        top: 50%;
         color: white;
         text-decoration: none;
         padding: 4px 8px;
@@ -192,12 +192,9 @@ body {
         text-decoration: none;
         padding: 8px 16px;
         border-radius: 5px;
-        background: linear-gradient(45deg, #34495e, #3683d1);
-        background-size: 200% 200%;
-        animation: shiny 3s linear infinite;
-        transition: transform 0.3s ease-in-out;
+        background: #656565;
+        background-size: 100% 100%;
     }
-
     .logo-heading {
         display: block;
         font-size: 0.8rem;
@@ -220,7 +217,7 @@ body {
     .toggle-bar.active {
         display: block;
         flex-direction: column;
-        background-color: #05273d;
+        background-color: #fff;
         width: 60%;
         font-size: 1rem;
         height: 100vh;
@@ -229,7 +226,7 @@ body {
         top: 0;
         left: 0;
         position: fixed;
-        border-left: 5px solid rgba(255, 255, 255, 0.3);
+        border-left: 5px solid #656565;
     }
 
     .toggle-bar ul {
@@ -242,7 +239,7 @@ body {
         display: block;
         cursor: pointer;
         font-size: 1.5rem;
-        color: #fff;
+        color: #656565;
         position: absolute;
         top: 20px;
         right: 20px;
@@ -292,10 +289,8 @@ body {
         text-decoration: none;
         padding: 8px 16px;
         border-radius: 5px;
-        background: linear-gradient(45deg, #34495e, #3683d1);
+        background: #656565;
         background-size: 200% 200%;
-        animation: shiny 3s linear infinite;
-        transition: transform 0.3s ease-in-out;
     }
 
     .logo-heading {
@@ -305,40 +300,30 @@ body {
         right: 50%;
     }
 }
-
-/* Home section */
 #home {
     display: flex;
     justify-content: center;
     align-items: center;
     min-height: 70vh;
-    /* Adjusted height */
-    color: white;
+    /* background-color: #525252; */
     text-align: center;
     padding: 40px;
-    /* Added padding for spacing */
     border-radius: 10px;
+    height: 100vh;
+    width: 100%;
 }
-
-#home:hover {
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-}
-
 .home-content {
     display: flex;
     align-items: center;
     gap: 20px;
-    /* Increased gap */
     flex-wrap: wrap;
-    /* Allow wrapping for better responsiveness */
 }
 
 .home-text h2 {
     font-size: 2.5rem;
     margin-bottom: 20px;
-    color: #fff;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 1);
-
+    color: #464646;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
 }
 
 .home-text p {
@@ -348,27 +333,21 @@ body {
     line-height: 1.5;
     text-align: center;
 }
-
 .home-text .btn {
     padding: 10px 20px;
-    /* Increased padding */
     border-radius: 5px;
-    background: linear-gradient(45deg, #34495e, #2c3e50);
+    background: linear-gradient(45deg, #464646, #525252);
     background-size: 200% 200%;
     animation: shiny 3s linear infinite;
     color: white;
     text-decoration: none;
     font-size: 1rem;
-    /* Increased font size */
     transition: background 0.3s ease-in-out, transform 0.3s ease-in-out;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-    /* Added shadow for depth */
 }
 
 .home-text .btn:hover {
-    background: linear-gradient(45deg, #2c3e50, #34495e);
-    transform: scale(1.1);
-    /* Adjusted scale for better effect */
+    background: linear-gradient(45deg, #525252, #464646);
 }
 
 .home-image {
@@ -422,39 +401,36 @@ body {
     }
 }
 .workshop-card {
-    background: rgba(255, 255, 255, 0.1);
+    background: #525252;
     border-radius: 10px;
     padding: 20px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
     margin-bottom: 20px;
 }
 
-
 @media (min-width: 768px) {
     .workshop-card {
         width: 30%;
         margin-bottom: 30px;
     }
-
 }
 
-/* Why Join section */
-.why-join-section,
-.why-now-section {
+#why-join, #why-now {
+    width: 100%;
+}
+
+.why-join-section, .why-now-section {
     padding: 60px 20px;
-    background-color: #05273d;
-    color: white;
+    color: #464646;
     text-align: center;
 }
 
-.why-join-container,
-.why-now-container {
+.why-join-container, .why-now-container {
     max-width: 1200px;
     margin: 0 auto;
 }
 
-.why-join-cards,
-.why-now-cards {
+.why-join-cards, .why-now-cards {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -462,7 +438,7 @@ body {
 }
 
 .card {
-    background: rgba(255, 255, 255, 0.1);
+    background-color: #656565;
     border-radius: 10px;
     padding: 20px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
@@ -474,11 +450,12 @@ body {
 .card i {
     font-size: 2rem;
     margin-bottom: 10px;
-    color: #00ffcc;
+    color: #fff;
     cursor: pointer;
 }
 
 .card h3 {
+    color: #fff;
     font-size: 1.5rem;
     margin-bottom: 10px;
 }
@@ -486,13 +463,12 @@ body {
 .card p {
     font-size: 1rem;
     line-height: 1.5;
+    color: #000;
 }
 
 /* Responsive styles */
 @media (max-width: 768px) {
-
-    .why-join-cards,
-    .why-now-cards {
+    .why-join-cards, .why-now-cards {
         flex-direction: column;
         align-items: center;
     }
@@ -503,56 +479,56 @@ body {
     }
 }
 
+#about {
+    height: 100vh;
+    width: 100%;
+}
+
 /* About section */
 .about-section {
-
     display: flex;
     justify-content: center;
     align-items: center;
-    color: white;
+    color: #ffffff;
     text-align: center;
     padding: 40px 0;
-    /* Increased padding */
 }
 
 .about-section:hover {
-    background: linear-gradient(135deg, #2c3e50, #05273d);
+    background: linear-gradient(135deg, #bdbdbd, #dcdcdc);
 }
 
 .about-container {
     background: rgba(255, 255, 255, 0.1);
     border-radius: 10px;
     padding: 20px;
-    /* Increased padding */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
     max-width: 700px;
-    /* Increased max-width */
     width: 100%;
     margin: 0 20px;
-    /* Increased margin */
-    float: left;
 }
 
 .about-container h2 {
     font-size: 2rem;
-    /* Increased font size */
     margin-bottom: 20px;
-    /* Increased margin */
-    color: #00ffcc;
+    color: #efefef;
 }
 
 .about-container p {
     font-size: 1rem;
-    /* Increased font size */
     margin-bottom: 20px;
-    /* Increased margin */
     line-height: 1.5;
 }
+
 /* FAQ section */
+#faq {
+    height: 120vh;
+    width: 100%;
+    background-color: #ffffff;
+}
+
 .faq-section {
     padding: 60px 20px;
-    background-color: #05273d;
-    color: white;
     text-align: center;
 }
 
@@ -564,11 +540,11 @@ body {
 .faq-container h2 {
     font-size: 2rem;
     margin-bottom: 40px;
-    color: #00ffcc;
+    color: #bdbdbd;
 }
 
 .faq-item {
-    background: rgba(255, 255, 255, 0.1);
+    background-color: #525252;
     border-radius: 10px;
     padding: 20px;
     margin-bottom: 20px;
@@ -584,20 +560,21 @@ body {
 }
 
 .faq-question h3 {
-    font-size: 1rem;
+    font-size: 1.1rem;
     margin: 0;
 }
 
 .faq-question i {
-    font-size: 1rem;
+    font-size: 1.1rem;
     transition: transform 0.3s ease-in-out;
 }
 
 .faq-answer {
     display: none;
     margin-top: 20px;
-    font-size: rem;
+    font-size: 1rem;
     line-height: 1.5;
+    color: #fff;
 }
 
 .faq-item.active .faq-answer {
@@ -629,10 +606,10 @@ body {
 
 /* Footer */
 .footer-container {
-    background: linear-gradient(45deg, #2c3e50, #34495e);
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
+    background-color: #525252;
     padding: 20px;
     flex-wrap: wrap;
 }
@@ -644,12 +621,15 @@ body {
     min-width: 200px;
 }
 
-.footer-content h2,
-.footer-content h3,
-.footer-contact h3 {
+.footer-content h2{
     font-size: 1.5rem;
     margin-bottom: 20px;
-    color: #89e0f0;
+    color: #FFFFFF;
+}
+.footer-content h3{
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    color: #FFFFFF;
 }
 
 .footer-content ul {
@@ -662,35 +642,35 @@ body {
 }
 
 .footer-content ul li a {
-    color: #ddd;
+    color: #FFFFFF;
     text-decoration: none;
     transition: color 0.3s;
 }
 
 .footer-content ul li a:hover {
-    color: #89e0f0;
+    color: #dcdcdc;
 }
 
 .footer-content h3 {
     font-size: 1.2rem;
     margin-bottom: 10px;
-    color: #89e0f0;
+    color: #dcdcdc;
 }
 
 .footer-content p {
     font-size: 1rem;
     margin-bottom: 10px;
-    color: #ddd;
+    color: #ffffff;
 }
 
 .footer-content a {
-    color: #00ffcc;
+    color: #dcdcdc;
     text-decoration: none;
     transition: color 0.3s;
 }
 
 .footer-content a:hover {
-    color: #fff;
+    color: #ffffff;
 }
 
 .footer-social ul {
@@ -712,7 +692,6 @@ body {
     width: 40px;
     height: 40px;
     border-radius: 50%;
-    color: #fff;
     font-size: 1.5rem;
     text-decoration: none;
     transition: background 0.3s ease-in-out;
@@ -720,13 +699,13 @@ body {
 
 .footer-social ul li a:hover {
     opacity: 0.9;
-    color: #89e0f0;
+    color: #dcdcdc;
 }
 
 .newsletter-form input[type="email"]:focus {
     outline: none;
-    box-shadow: 0 0 5px rgba(50, 150, 250, 0.5);
-    border: 1px solid #3286f0;
+    box-shadow: 0 0 5px rgba(102, 102, 102, 0.5);
+    border: 1px solid #dcdcdc;
 }
 
 .newsletter-form input[type="email"] {
@@ -742,10 +721,10 @@ body {
 .newsletter-form .btn {
     padding: 10px 20px;
     border-radius: 5px;
-    background: linear-gradient(45deg, #34495e, #2883df);
+    background: linear-gradient(45deg, #797777, #dcdcdc);
     background-size: 200% 200%;
     animation: shiny 3s linear infinite;
-    color: white;
+    color: #464646;
     text-decoration: none;
     font-size: 1rem;
     transition: background 0.3s ease-in-out, transform 0.3s ease-in-out;
@@ -754,7 +733,7 @@ body {
 }
 
 .newsletter-form .btn:hover {
-    background: linear-gradient(45deg, #2c3e50, #34495e);
+    background: linear-gradient(45deg, #dcdcdc, #bdbdbd);
     transform: scale(1.1);
 }
 
@@ -763,12 +742,12 @@ body {
     padding: 10px;
     font-size: 1rem;
     text-align: center;
-    border-top: 1px solid #89e0f0;
+    border-top: 1px solid #dcdcdc;
     margin-top: 20px;
 }
 
 .footer-bottom p {
-    color: #ddd;
+    color: #efefef;
 }
 
 @media (max-width: 768px) {
