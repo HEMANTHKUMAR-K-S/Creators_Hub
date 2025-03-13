@@ -12,14 +12,14 @@ html {
 body {
     font-family: 'Roboto', sans-serif;
     overflow-x: hidden;
-    background-color: #fff;
+    background-color: #F5F5F7;
 }
 
 /* Navbar */
 .navbar {
     display: flex;
-    box-shadow: 0 4px 8px rgba(0, 0.1, 0, 0.3);
-    background-color: #fff;   
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    background-color: #F5F5F7;
     width: 100%;
     height: 60px;
     position: fixed;
@@ -35,7 +35,7 @@ body {
     align-items: center;
     justify-content: flex-end;
     font-size: 1rem;
-    color: #656565;
+    color: #86868B;
     transition: transform 0.3s ease-in-out;
     font-family: 'Arial', sans-serif;
     cursor: pointer;
@@ -43,14 +43,15 @@ body {
 
 .join a {
     position: absolute;
-    top: 20%;
+    top: 30%;
     right: 20px;
     color: white;
     text-decoration: none;
-    padding: 8px 16px;
+    padding: 5px 10px;
     border-radius: 5px;
-    background-color: #7c7c7c;
+    background-color: #001E3C;
     background-size: 200% 200%;
+    font-size: 0.9rem;
 }
 
 .join a:hover {
@@ -74,7 +75,7 @@ body {
 
 .toggle-bar ul li a {
     text-decoration: none;
-    color: #656565;
+    color: #86868B;
     padding: 8px 12px;
     border-radius: 5px;
     position: relative;
@@ -87,7 +88,7 @@ body {
     height: 2px;
     bottom: 0;
     left: 0;
-    background-color: #656565;
+    background-color: #86868B;
     visibility: hidden;
     transform: scaleX(0);
     transition: all 0.3s ease-in-out;
@@ -124,7 +125,7 @@ body {
     .toggle-bar.active {
         display: block;
         flex-direction: column;
-        background-color: #fff;
+        background-color: #F5F5F7;
         width: 60%;
         font-size: 1rem;
         height: 100vh;
@@ -145,7 +146,7 @@ body {
         display: block;
         cursor: pointer;
         font-size: 1.5rem;
-        color: #656565;
+        color: #86868B;
         position: absolute;
         top: 20px;
         right: 20px;
@@ -155,7 +156,7 @@ body {
         display: block;
         cursor: pointer;
         font-size: 1.5rem;
-        color: #656565;
+        color: #86868B;
         position: absolute;
         top: 20px;
         right: 20px;
@@ -168,8 +169,8 @@ body {
     .toggle-bar ul li a {
         font-size: 1rem;
     }
-    .toggle-bar ul li a:hover{
-        background-color: #7c7c7c;
+    .toggle-bar ul li a:hover {
+        background-color: #0071E3;
         color: #FFFF;
         opacity: 0.9;
     }
@@ -192,7 +193,7 @@ body {
         text-decoration: none;
         padding: 8px 16px;
         border-radius: 5px;
-        background: #656565;
+        background: #0071E3;
         background-size: 100% 100%;
     }
     .logo-heading {
@@ -217,7 +218,7 @@ body {
     .toggle-bar.active {
         display: block;
         flex-direction: column;
-        background-color: #fff;
+        background-color: #F5F5F7;
         width: 60%;
         font-size: 1rem;
         height: 100vh;
@@ -226,7 +227,7 @@ body {
         top: 0;
         left: 0;
         position: fixed;
-        border-left: 5px solid #656565;
+        border-left: 5px solid #86868B;
     }
 
     .toggle-bar ul {
@@ -239,12 +240,11 @@ body {
         display: block;
         cursor: pointer;
         font-size: 1.5rem;
-        color: #656565;
+        color: #86868B;
         position: absolute;
         top: 20px;
         right: 20px;
     }
-
 
     .toggle-bar ul li {
         display: block;
@@ -289,7 +289,7 @@ body {
         text-decoration: none;
         padding: 8px 16px;
         border-radius: 5px;
-        background: #656565;
+        background: #0071E3;
         background-size: 200% 200%;
     }
 
@@ -305,7 +305,6 @@ body {
     justify-content: center;
     align-items: center;
     min-height: 70vh;
-    /* background-color: #525252; */
     text-align: center;
     padding: 40px;
     border-radius: 10px;
@@ -322,7 +321,7 @@ body {
 .home-text h2 {
     font-size: 2.5rem;
     margin-bottom: 20px;
-    color: #464646;
+    color: #001E3C;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
 }
 
@@ -336,7 +335,7 @@ body {
 .home-text .btn {
     padding: 10px 20px;
     border-radius: 5px;
-    background: linear-gradient(45deg, #464646, #525252);
+    background: linear-gradient(45deg, #001E3C, #0071E3);
     background-size: 200% 200%;
     animation: shiny 3s linear infinite;
     color: white;
@@ -347,7 +346,7 @@ body {
 }
 
 .home-text .btn:hover {
-    background: linear-gradient(45deg, #525252, #464646);
+    background: linear-gradient(45deg, #0071E3, #001E3C);
 }
 
 .home-image {
@@ -361,47 +360,40 @@ body {
     background-color: white;
     max-width: 200px;
     height: 200px;
-    box-shadow: 0 8px 16px rgba(1, 1, 1, 1);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 1);
     transition: shadow 0.3s ease-in-out;
 }
 
 .home-image img:hover {
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
-    /* Adjusted shadow on hover */
 }
 
 @media (max-width: 768px) {
     #home {
         flex-direction: column;
         min-height: 60vh;
-        /* Adjusted height */
     }
 
     .home-content {
         flex-direction: column;
         gap: 10px;
-        /* Adjusted gap */
     }
 
     .home-text h2 {
         font-size: 2rem;
-        /* Adjusted font size */
     }
 
     .home-text p {
         font-size: 0.9rem;
-        /* Adjusted font size */
     }
 
     .home-text .btn {
         font-size: 0.9rem;
-        /* Adjusted font size */
         padding: 8px 16px;
-        /* Adjusted padding */
     }
 }
 .workshop-card {
-    background: #525252;
+    background: #86868B;
     border-radius: 10px;
     padding: 20px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
@@ -421,8 +413,9 @@ body {
 
 .why-join-section, .why-now-section {
     padding: 60px 20px;
-    color: #464646;
+    color: #86868B;
     text-align: center;
+    background-color: #F5F5F7;
 }
 
 .why-join-container, .why-now-container {
@@ -438,7 +431,7 @@ body {
 }
 
 .card {
-    background-color: #656565;
+    background-color: #0071E3;
     border-radius: 10px;
     padding: 20px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
@@ -450,12 +443,12 @@ body {
 .card i {
     font-size: 2rem;
     margin-bottom: 10px;
-    color: #fff;
+    color: #FAE7D1;
     cursor: pointer;
 }
 
 .card h3 {
-    color: #fff;
+    color: #FAE7D1;
     font-size: 1.5rem;
     margin-bottom: 10px;
 }
@@ -463,7 +456,7 @@ body {
 .card p {
     font-size: 1rem;
     line-height: 1.5;
-    color: #000;
+    color: #FFFFFF;
 }
 
 /* Responsive styles */
@@ -482,6 +475,7 @@ body {
 #about {
     height: 100vh;
     width: 100%;
+    background-color: #F5F5F7;
 }
 
 /* About section */
@@ -489,13 +483,13 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    color: #ffffff;
+    color: #001E3C;
     text-align: center;
     padding: 40px 0;
 }
 
 .about-section:hover {
-    background: linear-gradient(135deg, #bdbdbd, #dcdcdc);
+    background: linear-gradient(135deg, #FAE7D1, #F5F5F7);
 }
 
 .about-container {
@@ -511,25 +505,27 @@ body {
 .about-container h2 {
     font-size: 2rem;
     margin-bottom: 20px;
-    color: #efefef;
+    color: #001E3C;
 }
 
 .about-container p {
     font-size: 1rem;
     margin-bottom: 20px;
     line-height: 1.5;
+    color: #86868B;
 }
 
 /* FAQ section */
 #faq {
     height: 120vh;
     width: 100%;
-    background-color: #ffffff;
+    background-color: #FFFFFF;
 }
 
 .faq-section {
     padding: 60px 20px;
     text-align: center;
+    color: #86868B;
 }
 
 .faq-container {
@@ -540,15 +536,13 @@ body {
 .faq-container h2 {
     font-size: 2rem;
     margin-bottom: 40px;
-    color: #bdbdbd;
+    color: #86868B;
 }
 
 .faq-item {
-    background-color: #525252;
-    border-radius: 10px;
+    background-color: #F5F5F7;
     padding: 20px;
     margin-bottom: 20px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
     text-align: left;
 }
 
@@ -560,21 +554,23 @@ body {
 }
 
 .faq-question h3 {
-    font-size: 1.1rem;
+    font-size: 1rem;
     margin: 0;
+    color: #001E3C;
 }
 
 .faq-question i {
     font-size: 1.1rem;
     transition: transform 0.3s ease-in-out;
+    color: #001E3C;
 }
 
 .faq-answer {
     display: none;
     margin-top: 20px;
-    font-size: 1rem;
+    font-size: 0.8rem;
     line-height: 1.5;
-    color: #fff;
+    color: #000;
 }
 
 .faq-item.active .faq-answer {
@@ -609,7 +605,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-    background-color: #525252;
+    background-color: #001E3C;
     padding: 20px;
     flex-wrap: wrap;
 }
@@ -621,15 +617,16 @@ body {
     min-width: 200px;
 }
 
-.footer-content h2{
+.footer-content h2 {
     font-size: 1.5rem;
     margin-bottom: 20px;
-    color: #FFFFFF;
+    color: #FAE7D1;
 }
-.footer-content h3{
+
+.footer-content h3 {
     font-size: 1.5rem;
     margin-bottom: 20px;
-    color: #FFFFFF;
+    color: #FAE7D1;
 }
 
 .footer-content ul {
@@ -642,7 +639,7 @@ body {
 }
 
 .footer-content ul li a {
-    color: #FFFFFF;
+    color: #FAE7D1;
     text-decoration: none;
     transition: color 0.3s;
 }
@@ -651,26 +648,20 @@ body {
     color: #dcdcdc;
 }
 
-.footer-content h3 {
-    font-size: 1.2rem;
-    margin-bottom: 10px;
-    color: #dcdcdc;
-}
-
 .footer-content p {
     font-size: 1rem;
     margin-bottom: 10px;
-    color: #ffffff;
+    color: #FAE7D1;
 }
 
 .footer-content a {
-    color: #dcdcdc;
+    color: #FAE7D1;
     text-decoration: none;
     transition: color 0.3s;
 }
 
 .footer-content a:hover {
-    color: #ffffff;
+    color: #dcdcdc;
 }
 
 .footer-social ul {
@@ -695,6 +686,7 @@ body {
     font-size: 1.5rem;
     text-decoration: none;
     transition: background 0.3s ease-in-out;
+    color: #FAE7D1;
 }
 
 .footer-social ul li a:hover {
@@ -721,10 +713,10 @@ body {
 .newsletter-form .btn {
     padding: 10px 20px;
     border-radius: 5px;
-    background: linear-gradient(45deg, #797777, #dcdcdc);
+    background: linear-gradient(45deg, #0071E3, #001E3C);
     background-size: 200% 200%;
     animation: shiny 3s linear infinite;
-    color: #464646;
+    color: #FAE7D1;
     text-decoration: none;
     font-size: 1rem;
     transition: background 0.3s ease-in-out, transform 0.3s ease-in-out;
@@ -733,7 +725,7 @@ body {
 }
 
 .newsletter-form .btn:hover {
-    background: linear-gradient(45deg, #dcdcdc, #bdbdbd);
+    background: linear-gradient(45deg, #001E3C, #0071E3);
     transform: scale(1.1);
 }
 
@@ -747,7 +739,7 @@ body {
 }
 
 .footer-bottom p {
-    color: #efefef;
+    color: #FAE7D1;
 }
 
 @media (max-width: 768px) {

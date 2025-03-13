@@ -1,6 +1,6 @@
 /* Container */
 .workshop-container {
-    background-color: #ffffff;
+    background-color: #F5F5F7;
     max-width: 100%;
     margin: auto;
     padding: 10px;
@@ -9,18 +9,19 @@
 
 /* Header */
 .workshop-header {
-    background-color: #7c7c7c;
-    color: #ffffff;
+    background-color:#F5F5F7;
+    color: #86868B;
     padding: 10px;
     margin-top: 60px;
     border-radius: 10px;
     margin-bottom: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0.1, 0.1);
 }
 
 .workshop-header h1 {
     margin: 0;
     font-size: 1.5em;
-    color: #FFFFFF;
+    color: #0071E3;
 }
 
 .workshop-header p {
@@ -31,10 +32,10 @@
 
 /* Section Titles */
 .workshop-container h2 {
-    color: #7c7c7c;
+    color: #005bb5;
     font-size: 1.5em;
     margin-top: 20px;
-    border-bottom: 2px solid #ffffff;
+    border-bottom: 2px solid #F5F5F7;
     display: inline-block;
     padding-bottom: 5px;
 }
@@ -56,7 +57,7 @@ a {
 
 /* Workshop Card */
 .workshop-card {
-    background-color: #7c7c7c;
+    background-color: #efefef;
     padding: 10px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -70,13 +71,13 @@ a {
 }
 
 .workshop-card h2 {
-    color: #FFFFFF;
+    color: #86868B;
     font-size: 1.2em;
 }
 
 .workshop-card p {
     font-size: 0.9em;
-    color: #fff;
+    color: #000;
     margin: 5px 0;
 }
 
@@ -87,25 +88,25 @@ a {
 
 .workshop-card div strong {
     font-weight: bold;
-    color: #FFFFFF;
+    color: #86868B;
 }
 
 .instructor-info {
-    color: #efefef;
+    color: #000;
     font-weight: bold;
 }
 
 .date-time {
     font-size: 0.8em;
-    color: #efefef;
+    color: #000;
 }
 
 /* Register Button */
 .register-btn {
     display: block;
     width: 100%;
-    background: #dcdcdc;
-    color: #7c7c7c;
+    background: #0071E3;
+    color: #ffffff;
     padding: 8px;
     border: none;
     cursor: pointer;
@@ -115,12 +116,12 @@ a {
 }
 
 .register-btn:hover {
-    background: #bdbdbd;
+    background: #005bb5;
 }
 
 /* Disabled Button */
 .disabled-btn {
-    background: #ffffff;
+    background: #F5F5F7;
     cursor: not-allowed;
     color: black;
 }
@@ -150,7 +151,7 @@ a {
 }
 
 .modal h2 {
-    color: #7c7c7c;
+    color: #0071E3;
     font-size: 1.3em;
 }
 
@@ -171,7 +172,7 @@ a {
 .modal button {
     display: block;
     width: 100%;
-    background: #7c7c7c;
+    background: #0071E3;
     color: #ffffff;
     padding: 8px;
     border: none;
@@ -180,7 +181,7 @@ a {
 }
 
 .modal button:hover {
-    background: #7c7c7c;
+    background: #005bb5;
 }
 
 /* Close Button */

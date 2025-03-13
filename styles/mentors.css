@@ -100,9 +100,9 @@
 
 .mentor-social a {
     display: inline-block;
-    width: 35px; /* Increased size for desktop */
-    height: 35px; /* Increased size for desktop */
-    background: #7c7c7c; /* New background color */
+    width: 35px; 
+    height: 35px; 
+    background: #7c7c7c; 
     color: #fff;
     border-radius: 50%;
     line-height: 35px; /* Adjusted line height for new size */

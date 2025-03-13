@@ -1,7 +1,7 @@
 .contact-section {
     padding: 40px 0;
     font-family: Arial, sans-serif;
-    background-color: #FFFFFF;
+    background-color: #F5F5F7; /* Light Gray */
 }
 
 .container {
@@ -16,12 +16,12 @@
     text-align: center;
     font-size: 32px;
     margin-bottom: 20px;
-    color: #FFFFFF;
+    color: #001E3C; /* Midnight Blue */
 }
 
 .contact-card {
     margin: 100px auto 20px auto;
-    background-color: #7c7c7c;
+    background-color: #FAE7D1; /* Starlight Gold */
     padding: 30px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -30,7 +30,7 @@
 
 .contact-card button {
     padding: 12px 24px;
-    background-color: #bdbdbd;
+    background-color: #0071E3; /* Blue */
     color: #ffffff;
     border: none;
     border-radius: 5px;
@@ -40,8 +40,8 @@
 }
 
 .contact-card button:hover {
-    background-color: #dcdcdc;
-    color: #7c7c7c;
+    background-color: #005bb5; /* Darker Blue */
+    color: #ffffff;
 }
 
 .contact-form {
@@ -58,19 +58,19 @@
 .contact-card h3 {
     font-size: 24px;
     margin-bottom: 15px;
-    color: #bdbdbd;
+    color: #86868B; /* Silver/Gray Variant */
 }
 
 .contact-form h3 {
     font-size: 24px;
     margin-bottom: 15px;
-    color: #7c7c7c;
+    color: #A1A1A6; /* Silver/Gray Variant */
 }
 
 .contact-card p {
     font-size: 16px;
     line-height: 1.8;
-    color: #FFFFFF;
+    color: #001E3C; /* Midnight Blue */
 }
 
 .contact-form form {
@@ -85,7 +85,7 @@
 .form-group label {
     font-size: 16px;
     margin-bottom: 8px;
-    color: #7c7c7c;
+    color: #001E3C; /* Midnight Blue */
 }
 
 .form-group input, .form-group textarea {
@@ -94,19 +94,19 @@
     border: 1px solid #dcdcdc;
     border-radius: 5px;
     font-size: 14px;
-    color: #7c7c7c;
+    color: #001E3C; /* Midnight Blue */
     resize: none;
     background-color: #ffffff;
 }
 
 .form-group input:focus, .form-group textarea:focus {
-    border-color: #bdbdbd;
+    border-color: #0071E3; /* Blue */
     outline: none;
 }
 
 button[type="submit"] {
     padding: 10px 20px;
-    background-color: #bdbdbd;
+    background-color: #0071E3; /* Blue */
     color: #ffffff;
     border: none;
     border-radius: 5px;
@@ -116,11 +116,11 @@ button[type="submit"] {
 }
 
 button[type="submit"]:hover {
-    background-color: #7c7c7c;
+    background-color: #005bb5; /* Darker Blue */
 }
 
 button.team-join:hover {
-    background-color: #218838;
+    background-color: #218838; /* Green */
 }
 
 /* responsive media queries */
