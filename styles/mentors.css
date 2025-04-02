@@ -1,8 +1,22 @@
+:root {
+    --color-primary: #1f2757;
+    --color-primary-hover: #151c41;
+    --color-secondary: white;
+    --color-secondary-border: #ddd;
+    --color-secondary-hover: #f9fafb;
+    --color-background: linear-gradient(45deg, #f0f8ff, #e6f3ff);
+    --color-text-primary: #1f2757;
+    --color-text-secondary: #6b7280;
+    --color-shadow-primary: rgba(31, 39, 87, 0.2);
+    --color-shadow-secondary: rgba(0, 0, 0, 0.1);
+    --color-shadow-image: rgba(0, 0, 0, 0.15);
+}
+
 .mentors-section {
     display: flex;
     flex-direction: column;
-    padding: 40px; /* Increased padding for desktop */
-    background-color: #efefef; /* New background color */
+    padding: 40px;
+    background: var(--color-background);
 }
 
 .mentors-container {
@@ -14,38 +28,37 @@
 
 .mentor-intro-card {
     margin: 50px auto 0 auto;
-    background: rgba(255, 255, 255, 0.1);
+    background: var(--color-secondary);
     border-radius: 15px;
-    padding: 30px; /* Increased padding for desktop */
+    padding: 30px;
     margin-bottom: 20px;
     text-align: left;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    max-width: 80%; /* Adjusted width for desktop */
+    box-shadow: 0 4px 10px var(--color-shadow-secondary);
+    max-width: 80%;
     height: auto;
-    background-color: #ffffff; /* New background color */
 }
 
 .mentor-intro-card h2 {
-    font-size: 2rem; /* Increased font size for desktop */
-    color: #7c7c7c; /* New text color */
+    font-size: 2rem;
+    color: var(--color-text-secondary);
     margin-bottom: 15px;
 }
 
 .mentor-intro-card p {
-    font-size: 1rem; /* Increased font size for desktop */
-    color: #7c7c7c; /* New text color */
-    line-height: 1.6; /* Increased line height for better readability */
+    font-size: 1rem;
+    color: var(--color-text-secondary);
+    line-height: 1.6;
 }
 
 .mentor-card {
-    background-color: #dcdcdc; /* New background color */
+    background-color: var(--color-secondary-border);
     border-radius: 15px;
     margin-top: 20px;
     width: 300px;
     flex-direction: column;
     text-align: center;
-    color: #333;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    color: var(--color-text-primary);
+    box-shadow: 0 4px 10px var(--color-shadow-primary);
     transition: transform 0.3s, box-shadow 0.3s;
     animation: fadeIn 0.5s ease-in-out;
     gap: 20px;
@@ -53,41 +66,41 @@
 }
 
 .mentor-card:hover {
-    box-shadow: 0 8px 20px rgba(0, 0, 0.6, 0.4);
+    box-shadow: 0 8px 20px var(--color-shadow-primary);
 }
 
 .mentor-image {
-    background: linear-gradient(135deg, #bdbdbd, #dcdcdc); /* New gradient colors */
+    background: var(--color-background);
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
     padding: 10px;
 }
 
 .mentor-card img {
-    width: 120px; /* Increased image size for desktop */
-    height: 120px; /* Increased image size for desktop */
+    width: 120px;
+    height: 120px;
     border-radius: 50%;
     margin-bottom: 10px;
-    border: 3px solid #bdbdbd; /* New border color */
+    border: 3px solid var(--color-secondary-border);
 }
 
 .mentor-card h3 {
     margin: 10px 0 5px;
-    font-size: 1.2rem; /* Increased font size for desktop */
-    color: #7c7c7c; /* New text color */
+    font-size: 1.2rem;
+    color: var(--color-text-secondary);
     font-weight: bold;
     text-transform: uppercase;
 }
 
 .mentor-card p {
-    color: #7c7c7c; /* New text color */
-    font-size: 1rem; /* Increased font size for desktop */
+    color: var(--color-text-secondary);
+    font-size: 1rem;
     margin-bottom: 10px;
-    line-height: 1.6; /* Increased line height for better readability */
+    line-height: 1.6;
 }
 
 .mentor-card span {
-    color: #046983;
+    color: var(--color-primary);
     font-weight: bold;
 }
 
@@ -100,19 +113,19 @@
 
 .mentor-social a {
     display: inline-block;
-    width: 35px; 
-    height: 35px; 
-    background: #7c7c7c; 
-    color: #fff;
+    width: 35px;
+    height: 35px;
+    background: var(--color-text-secondary);
+    color: var(--color-secondary);
     border-radius: 50%;
-    line-height: 35px; /* Adjusted line height for new size */
+    line-height: 35px;
     margin: 0 5px;
     transition: background 0.3s;
 }
 
 .mentor-social a:hover {
-    background: #bdbdbd; /* New hover background color */
-    color: #046983;
+    background: var(--color-primary);
+    color: var(--color-secondary);
 }
 
 @keyframes fadeIn {

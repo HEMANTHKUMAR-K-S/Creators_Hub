@@ -10,20 +10,20 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
         integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <title>Creators Hub</title>
+    <title>Studesk</title>
     <link rel="icon" href="assets/images/logo-trasparent.png" type="image/png">
     <meta name="description"
-        content="Creators Hub is a community of passionate creators who come together to innovate, collaborate, and grow. Join us for workshops, mentorship, and more.">
+        content="Studesk is a community of passionate creators who come together to innovate, collaborate, and grow. Join us for workshops, mentorship, and more.">
     <meta name="keywords"
-        content="Creators Hub, workshops, mentorship, community, innovation, collaboration, artists, developers, designers, entrepreneurs">
-    <meta name="author" content="Creators Hub">
-    <meta property="og:title" content="Creators Hub">
+        content="Studesk, workshops, mentorship, community, innovation, collaboration, artists, developers, designers, entrepreneurs">
+    <meta name="author" content="Studesk">
+    <meta property="og:title" content="Studesk">
     <meta property="og:description"
         content="Join a community of passionate creators who come together to innovate, collaborate, and grow.">
     <meta property="og:image" content="assets/images/logo-trasparent.png">
     <meta property="og:url" content="https://creatorshub-beta.vercel.app/">
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Creators Hub">
+    <meta name="twitter:title" content="Studesk">
     <meta name="twitter:description"
         content="Join a community of passionate creators who come together to innovate, collaborate, and grow.">
     <meta name="twitter:image" content="assets/images/logo-trasparent.png">
@@ -36,54 +36,58 @@
 
 <body>
     <header>
-    <div class="navbar">
-        <div class="logo-heading">
-            <h1>Creators Hub</h1>
-        </div>
-        <div class="toggle-bar" id="toggleBar">
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="workshops.html">Workshops</a></li>
-                <li><a href="mentors.html">Mentors</a></li>
-                <li><a href="gallery.html">Gallery</a></li>
-                <li><a href="team.html">Team</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-            <div class="mobile-join"><a href="https://whatsapp.com/channel/0029Vb8Wg8r6hENxXsKffY3r">Join Our Community</a></div>
-        </div>
-        <div class="menu-toggle" id="mobile-menu">
-            <i class="fas fa-bars"></i>
-        </div>
-        <!-- <span id="theme-toggle" class="theme-icon">
+        <div class="navbar">
+            <div class="logo-heading">
+                <h1>Studesk</h1>
+            </div>
+            <div class="toggle-bar" id="toggleBar">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="workshops.html">Workshops</a></li>
+                    <li><a href="mentors.html">Mentors</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="team.html">Team</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+                <div class="mobile-join"><a href="https://whatsapp.com/channel/0029Vb8Wg8r6hENxXsKffY3r">Join Our
+                        Community</a></div>
+            </div>
+            <div class="menu-toggle" id="mobile-menu">
+                <i class="fas fa-bars"></i>
+            </div>
+            <!-- <span id="theme-toggle" class="theme-icon">
             <i class="fas fa-moon"></i>
         </span> -->
-        <div class="join"><a href="https://whatsapp.com/channel/0029Vb8Wg8r6hENxXsKffY3r">Join Our Community</a></div>
-    </div>
-</header>
-    <section id="home">
-        <div class="home-content">
-            <div class="home-image">
-                <img src="assets/images/logo-trasparent.png" alt="Creators Hub">
+            <div class="join"><a href="https://whatsapp.com/channel/0029Vb8Wg8r6hENxXsKffY3r">Join Our Community</a>
             </div>
-            <div class="home-text">
-                <h2>Welcome to Creators Hub</h2>
-                <p>Join a community of passionate creators who come together to innovate, collaborate, and grow. Whether
-                    you are an artist, developer, designer, or entrepreneur, Creators Hub offers the resources and
-                    support you need to succeed.</p>
-                <a href="workshops.html" class="btn" target="_blank">Learn More</a>
+        </div>
+    </header>
+    <section class="hero">
+        <div class="container" style="display: flex; align-items: center;">
+            <div class="hero-content">
+                <h1 class="hero-title">Dive into the Future: Student Desk</h1>
+                <p class="hero-desc">Elevate your workspace experience with Studesk's cutting-edge 3D technology.
+                    Explore our innovative products and services designed to enhance productivity.</p>
+                <div class="hero-buttons">
+                    <a href="workshops.html" class="btn-primary" >Explore</a>
+                    <a href="#" class="btn-secondary">Get Started</a>
+                </div>
+                <p class="hero-tagline">Unlock the potential of your workspace with Studesk</p>
             </div>
 
+            <div class="hero-image perspective-container">
+                <img src="assets/images/logo-trasparet.png" alt="3D Workspace">
+            </div>
         </div>
 
     </section>
-
     <section id="workshop">
         <div class="workshop-container">
             <h2>Upcoming Workshops</h2>
-           
-                <div id="upcoming-workshops" class="workshop-grid"></div>
-                <div id="coming-soon-workshops" class="workshop-grid"></div>
-            
+
+            <div id="upcoming-workshops" class="workshop-grid"></div>
+            <div id="coming-soon-workshops" class="workshop-grid"></div>
+
 
         </div>
         <div id="modal" class="modal">
@@ -200,7 +204,7 @@
     </section>
     <section id="why-join" class="why-join-section">
         <div class="why-join-container">
-            <h2>Why Join Creators Hub?</h2>
+            <h2>Why Join Studesk?</h2>
             <div class="why-join-cards">
                 <div class="card">
                     <i class="fas fa-users"></i>
@@ -256,9 +260,9 @@
     <!-- <section id="about" class="about-section">
         <div class="about-container">
             <h2>About Us</h2>
-            <p>Creators Hub is a community of passionate individuals who come together to bring innovative ideas to
+            <p>Studesk is a community of passionate individuals who come together to bring innovative ideas to
                 life. Our mission is to provide a platform for creators to collaborate, learn, and grow. Whether you
-                are an artist, developer, designer, or entrepreneur, Creators Hub offers the resources and support you
+                are an artist, developer, designer, or entrepreneur, Studesk offers the resources and support you
                 need to succeed.</p>
             <p>Join us to be a part of a vibrant community that values creativity, collaboration, and continuous
                 learning. Together, we can turn ideas into reality and make a positive impact on the world.</p>
@@ -269,20 +273,22 @@
             <h2>FAQs</h2>
             <div class="faq-item">
                 <div class="faq-question" onclick="toggleAnswer(this)">
-                    <h3>What is Creators Hub?</h3>
+                    <h3>What is Studesk?</h3>
                     <i class="fas fa-chevron-down"></i>
                 </div>
                 <div class="faq-answer">
-                    <p>Creators Hub is a community of passionate individuals who come together to bring innovative ideas to life. Our mission is to provide a platform for creators to collaborate, learn, and grow.</p>
+                    <p>Studesk is a community of passionate individuals who come together to bring innovative ideas
+                        to life. Our mission is to provide a platform for creators to collaborate, learn, and grow.</p>
                 </div>
             </div>
             <div class="faq-item">
                 <div class="faq-question" onclick="toggleAnswer(this)">
-                    <h3>How can I join Creators Hub?</h3>
+                    <h3>How can I join Studesk?</h3>
                     <i class="fas fa-chevron-down"></i>
                 </div>
                 <div class="faq-answer">
-                    <p>You can join Creators Hub by clicking on the "Join" link in the navigation bar or by visiting our community page on WhatsApp.</p>
+                    <p>You can join Studesk by clicking on the "Join" link in the navigation bar or by visiting our
+                        community page on WhatsApp.</p>
                 </div>
             </div>
             <div class="faq-item">
@@ -291,16 +297,18 @@
                     <i class="fas fa-chevron-down"></i>
                 </div>
                 <div class="faq-answer">
-                    <p>We offer a variety of workshops covering topics such as art, development, design, entrepreneurship, and more. Check our workshops page for upcoming events.</p>
+                    <p>We offer a variety of workshops covering topics such as art, development, design,
+                        entrepreneurship, and more. Check our workshops page for upcoming events.</p>
                 </div>
             </div>
             <div class="faq-item">
                 <div class="faq-question" onclick="toggleAnswer(this)">
-                    <h3>How can I contact Creators Hub?</h3>
+                    <h3>How can I contact Studesk?</h3>
                     <i class="fas fa-chevron-down"></i>
                 </div>
                 <div class="faq-answer">
-                    <p>You can contact us via email at creators.hub.05@gmail.com or by phone at +91 9505002615. Our address is 000, Tirupati, India.</p>
+                    <p>You can contact us via email at creators.hub.05@gmail.com or by phone at +91 9505002615. Our
+                        address is 000, Tirupati, India.</p>
                 </div>
             </div>
             <div class="faq-item">
@@ -309,7 +317,8 @@
                     <i class="fas fa-chevron-down"></i>
                 </div>
                 <div class="faq-answer">
-                    <p>No, our workshops are designed for creators of all skill levels. Whether you are a beginner or an experienced professional, you will find value in our sessions.</p>
+                    <p>No, our workshops are designed for creators of all skill levels. Whether you are a beginner or an
+                        experienced professional, you will find value in our sessions.</p>
                 </div>
             </div>
             <div class="faq-item">
@@ -318,7 +327,8 @@
                     <i class="fas fa-chevron-down"></i>
                 </div>
                 <div class="faq-answer">
-                    <p>Yes, all our workshops are free to attend. We believe in providing accessible learning opportunities for everyone.</p>
+                    <p>Yes, all our workshops are free to attend. We believe in providing accessible learning
+                        opportunities for everyone.</p>
                 </div>
             </div>
         </div>
@@ -342,8 +352,8 @@
     <footer>
         <div class="footer-container">
             <div class="footer-content">
-                <h2>Creators Hub</h2>
-                <p>Creators Hub is a community of passionate individuals who come together to bring innovative ideas to
+                <h2>Studesk</h2>
+                <p>Studesk is a community of passionate individuals who come together to bring innovative ideas to
                     life. Our mission is to provide a platform for creators to collaborate, learn, and grow.</p>
                 <div class="footer-social">
                     <ul>
@@ -381,7 +391,7 @@
             </div>
             <div class="footer-bottom">
                 <p>&copy;
-                    <script>document.write(new Date().getFullYear());</script> Creators Hub. All rights reserved.
+                    <script>document.write(new Date().getFullYear());</script> Studesk. All rights reserved.
                 </p>
             </div>
         </div>
