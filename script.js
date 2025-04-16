@@ -5,8 +5,8 @@ const body = document.body;
 // Create the close icon element
 const closeIcon = document.createElement('span');
 closeIcon.id = 'close-icon';
-closeIcon.innerHTML = '&times;'; // HTML entity for '×'
-closeIcon.style.display = 'none'; // Initially hidden
+closeIcon.innerHTML = '&times;'; 
+closeIcon.style.display = 'none'; 
 navbarContainer.appendChild(closeIcon);
 
 if (mobileMenu && navbarContainer) {
@@ -47,5 +47,3 @@ if (mobileMenu && navbarContainer) {
     });
 }
 
-
-// theme
